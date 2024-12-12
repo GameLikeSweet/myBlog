@@ -5,5 +5,3 @@ for (var i = 0 ; i < menu_list.length; i++)
 {
     document.write("<li>"+ menu_list[i] + "</li>");
 }
-
-MediaSourceHandle.exports.menu_list;
