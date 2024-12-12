@@ -1,5 +1,5 @@
 document.write("<p>This is Test</p>");
 
-const tester = require('Js/head_menu.js')
+const tester = require('Js/nav.js')
 
 document.write("<p>" + tester + "</p>")

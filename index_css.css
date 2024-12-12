@@ -35,6 +35,12 @@ nav > ul > li
     float: left;
     padding:5px;
 }
+nav a
+{
+    color : red;
+    background-color: none;
+    text-decoration: none;
+}
 
 /*메인*/
 #main
