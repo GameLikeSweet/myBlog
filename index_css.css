@@ -12,6 +12,10 @@ header{
     border: 2px solid black;
     background-color: lightskyblue;
 }
+header li
+{
+    color: red;
+}
 
 /*네비*/
 nav
@@ -57,7 +61,7 @@ article
 }
 aside
 {
-    width: 270px; height:320px;
+    width: 200px; height:320px;
     padding:10px;
     background-color: lemonchiffon;
     float:left;
