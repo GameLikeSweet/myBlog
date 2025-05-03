@@ -1,0 +1,159 @@
+/*기본틀*/
+*{margin:0px; padding:0px;}
+body{
+    font-family: 'Verdana'; font-size: 16px;
+    color:black; line-height: 28px;
+    margin:0 auto;
+    display:flex;
+}
+/*헤더*/
+header{
+    width: 1000px; height: 100px;
+    margin: 0px auto; padding: 10px 30px;
+    overflow:hidden;
+    background-color: lightskyblue;
+    box-sizing: border-box;
+    position:fixed;
+    display:flex;
+    left:50%;
+    transform: translateX(-50%);
+    div{
+        display:flex;
+        width: 200px;
+        margin:auto 0;
+        a{
+            display:flex;
+            text-decoration: none;
+            color:black;
+            img{
+                width:50px;
+                height: 50px;
+                margin-right: 20px;
+            }
+            p{
+                padding:10px 0;
+                display:flex;
+            }
+        }
+    }
+    nav{
+        width:800px;
+        margin:auto 0;
+        display:flex;
+        li{
+            margin: 0 10px;
+            a{
+                background-color: none;
+                text-decoration: none;
+                color: #999999
+            }
+        }
+    }
+}
+
+
+@mixin aside () {
+    width: 250px; height:1000px;
+    box-sizing: border-box;
+    background-color: lemonchiffon;
+    border-right-style:solid;
+}
+
+/*사이드*/
+.profile{
+    @include aside;
+    float:left;
+    position:fixed;
+    display:flex;
+    left: calc(50% - 750px);
+    padding-top: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    div{
+        padding:10px;
+        text-align: center;
+        img{
+            width:150px;
+            height:150px;
+            margin:10px 0;
+            border-radius: 50%;
+        }
+    }
+
+    ul{
+        list-style: none;
+        background-color: white;
+        width:100%;
+        li{
+            margin:2px;
+            word-break: break-all;
+            border-style: solid;
+            a{
+                text-decoration: none;
+                color:black
+            }
+        }
+    }
+}
+
+/*네비*/
+nav
+{
+    float: right; overflow: hidden;
+    position: relative;
+    ul{
+        overflow:hidden;
+        background-color: lightcyan;
+        li{
+            list-style: none;
+            float: left;
+            padding:5px;
+        }
+    }
+
+
+}
+
+/*메인*/
+#main
+{
+    width:1000px; height:3400px;
+    margin:0px auto; margin-top: 100px; padding: 10px;
+    top: 60px;
+    background-color: pink;
+    box-sizing: border-box;
+}
+
+section
+{
+    width:900px;
+    padding: 10px; margin: 10 auto;
+    background-color: aquamarine;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+article
+{
+    width:320px; height: 170px;
+    padding: 10px;
+    background-color: orange;
+    margin: 30px auto;
+}
+
+
+.homeL{
+    width: 400px;
+    height: 300px;
+    padding:0;
+}
+
+.homeR{
+    background-color: lightgray;
+}
+.New{
+    background-color:white;
+    article{
+        height:inherit;
+    }
+}

@@ -2,27 +2,45 @@
     <head>
         <meta charset="uft-8">
         <title>Myblog</title>
-        <link rel="stylesheet" type="text/css" href="index_css.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
         <header>
-            My Blog
+            <div><a href="./index.html"><img src="./resource/logo.png"><p>My Blog</p></a></div>
             <nav>
-                <ul>
+                <ul id="nav">
                     <script src="Js/nav.js"></script>
                 </ul>
             </nav>
         </header>
-        <div id="main">
-            <section>
-                <script src="Js/section.js"></script>
-                <article>
-                    <script src="Js/article.js"></script>
-                </article>
-            </section>
-            <aside>
-                <script type="module" src="Js/aside.js"></script>
-            </aside>
+
+        <div class="profile">
+            <div class="myimg">
+                <img src="./resource/js.png">
+                <p><h1>PSH</h1>박성훈</p>
+            </div>
+            <div class="myprofile">
+                <ul>
+                    <li><a href="https://github.com/GameLikeSweet" target="_blank">github</a></li>
+                    <li>tjdgns9978@gmail.com</li>
+                </ul>
+            </div>
         </div>
+        <div id="main">
+        </div>
+
+        <script src="Js/section.js"></script>
+        <script src="Js/article.js"></script>
+        <script>
+            mkSection("Home");
+            mkArticle({target:".Home", title:"homeL"})
+            mkArticle({target:".Home", title:"homeR"})
+            addImg({target: ".homeL", text:"./resource/home.png"})
+            addP({target: ".homeR" , text:"<h1>개발자 박성훈의 블로그입니다.</h1><br>새로 배워나가는것들의 정리 및 연구를 위한 공간입니다."})
+            mkSection("New");
+            mkArticle({target: '.New', title:"newL"});
+            mkArticle({target: '.New', title:"newR"});
+            addP({target: ".newL", text: "Test"})
+        </script>
     </body>
 </html>
