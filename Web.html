@@ -2,7 +2,7 @@
     <head>
         <meta charset="uft-8">
         <title>Myblog</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="Web.css">
     </head>
     <body>
         <header>
@@ -16,7 +16,7 @@
 
         <div class="profile">
             <div class="myimg">
-                <img src="./resource/js.png">
+                <img src="./resource/Me.jpg">
                 <p><h1>PSH</h1>박성훈</p>
             </div>
             <div class="myprofile">
@@ -33,7 +33,9 @@
         <script src="Js/article.js"></script>
         <script>
             mkSection("Top");
+            mkArticle({target : ".Top", title : "topGithub"});
             mkSection("Mid");
+            mkArticle({target : ".Mid", title : "midMain"})
             mkSection("Bot");
             addDiv("./Json/web101.json");
         </script>

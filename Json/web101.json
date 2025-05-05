@@ -1,11 +1,28 @@
 {
     "0" : {
-        "target": ".Top",
-        "text" : "<p><h1>Web 101</h1></p>"
+        "target": ".topGithub",
+        "title" : "topName",
+        "text" : "<img src='./resource/web101/index.png'><p><h1>Web 101</h1></p>"
     },
 
     "1" : {
-        "target" : ".Mid",
-        "text" : "<div class='web101_mid'><p>web 101 제작<br> <a href='' target=_self>github 주소</a> </p></div>"
+        "target" : ".topGithub",
+        "title" : "githubLink",
+        "text" : "<div class='web101_mid'><a href='https://github.com/GameLikeSweet/web101' target=_self> -> github 리포지토리 주소</a> </p></div>"
+    },
+    "2" :{
+        "target" : ".topGithub",
+        "title" : "topAbout",
+        "text" : "<p>기본적인 HTML의 엘리먼트를 알아보고 사용해보는것을 목적으로 작성한다.<br> body 내부에 h1, div, a 등의 자주 사용하는 여러 엘리먼트를 사용해보고 페이지 이동을 구현한다.</p>"
+    },
+    "3" :{
+        "target" : ".midMain",
+        "title" : "web101img",
+        "text" : "<img src='./resource/web101/html.png'>"
+    },
+    "4" : {
+        "target" : ".midMain",
+        "title" : "midAbout",
+        "text" : "<p>HTML 초기 코드와 기초적인 엘리먼트를 사용하였고 style은 기본적인 크기나 href 및 src 정도만 사용하였다.</p>"
     }
 }

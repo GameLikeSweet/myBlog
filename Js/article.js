@@ -26,8 +26,7 @@ function addDiv(content) {
             .catch(err => console.error("JSON 로딩 실패:", err));
         return;
     }
-
-    if (typeof content === "object" && !Array.isArray(content)) {
+    else if (typeof content === "object" && !Array.isArray(content)) {
         const keys = Object.keys(content);
         const isMulti = keys.every(k => !isNaN(k)); // 숫자 key만 있으면 반복
 
@@ -45,12 +44,12 @@ function addDiv(content) {
         return;
     }
 
-    const article = document.createElement("article");
+
     const div = document.createElement("div");
+    div.classList.add(content.title);
     div.innerHTML = content.text;
 
-    article.appendChild(div);
-    target.appendChild(article);
+    target.appendChild(div);
 }
 
 

@@ -7,8 +7,9 @@ function navi (menu, url)
 let Web = new navi('Web', './Web.html');
 let Alg = new navi('알고리즘', './Alg.html');
 let Uni = new navi('Unity', './Unity.html');
+let Git = new navi("Git", './Git.html');
 
-var menu_list = [Web , Alg, Uni];
+var menu_list = [Web , Alg, Uni, Git];
 
 const nav = document.getElementById('nav');
 

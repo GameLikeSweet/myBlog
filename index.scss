@@ -11,7 +11,7 @@ header{
     width: 1000px; height: 100px;
     margin: 0px auto; padding: 10px 30px;
     overflow:hidden;
-    background-color: lightskyblue;
+    background-color: #95C5D4;
     box-sizing: border-box;
     border-bottom-style:solid;
     position:fixed;
@@ -30,6 +30,7 @@ header{
                 width:50px;
                 height: 50px;
                 margin-right: 20px;
+                object-fit: contain;
             }
             p{
                 padding:10px 0;
@@ -56,7 +57,7 @@ header{
 @mixin aside () {
     width: 250px; height:1000px;
     box-sizing: border-box;
-    background-color: lemonchiffon;
+    background-color: #FCD6B3
 }
 
 /*사이드*/
@@ -77,6 +78,7 @@ header{
             height:150px;
             margin:10px 0;
             border-radius: 50%;
+            object-fit: cover;
         }
     }
 
@@ -103,11 +105,13 @@ nav
     position: relative;
     ul{
         overflow:hidden;
-        background-color: lightcyan;
         li{
             list-style: none;
             float: left;
             padding:5px;
+            a{
+                color:black
+            }
         }
     }
 
@@ -120,8 +124,8 @@ nav
     border-left-style:solid;
     width:1000px; height:3400px;
     margin:0px auto; margin-top: 100px; padding: 10px;
+    background-color: #E6ECF2;
     top: 60px;
-    background-color: pink;
     box-sizing: border-box;
 }
 

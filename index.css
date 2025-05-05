@@ -21,7 +21,7 @@ header {
   margin: 0px auto;
   padding: 10px 30px;
   overflow: hidden;
-  background-color: lightskyblue;
+  background-color: #95C5D4;
   box-sizing: border-box;
   border-bottom-style: solid;
   position: fixed;
@@ -43,6 +43,8 @@ header div a img {
   width: 50px;
   height: 50px;
   margin-right: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 header div a p {
   padding: 10px 0;
@@ -67,7 +69,7 @@ header nav li a {
   width: 250px;
   height: 1000px;
   box-sizing: border-box;
-  background-color: lemonchiffon;
+  background-color: #FCD6B3;
   float: left;
   position: fixed;
   display: flex;
@@ -85,6 +87,8 @@ header nav li a {
   height: 150px;
   margin: 10px 0;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .profile ul {
   list-style: none;
@@ -109,12 +113,14 @@ nav {
 }
 nav ul {
   overflow: hidden;
-  background-color: lightcyan;
 }
 nav ul li {
   list-style: none;
   float: left;
   padding: 5px;
+}
+nav ul li a {
+  color: black;
 }
 
 /*메인*/
@@ -125,8 +131,8 @@ nav ul li {
   margin: 0px auto;
   margin-top: 100px;
   padding: 10px;
+  background-color: #E6ECF2;
   top: 60px;
-  background-color: pink;
   box-sizing: border-box;
 }
 
