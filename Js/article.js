@@ -15,17 +15,44 @@ function mkArticle (content) {
 }
 
 
-function addP(content) {
-    if(content == undefined) return;
-    else{
-        const target = document.querySelectorAll(content.target)[0];
-        const p = document.createElement("p");
+function addDiv(content) {
+    if (content == undefined) return;
 
-        p.innerHTML = content.text
-
-        target.append(p);
+    if (typeof content === "string") {
+        console.log("addDiv: " + content + " is working");
+        fetch(content)
+            .then(res => res.json())
+            .then(data => addDiv(data))
+            .catch(err => console.error("JSON 로딩 실패:", err));
+        return;
     }
+
+    if (typeof content === "object" && !Array.isArray(content)) {
+        const keys = Object.keys(content);
+        const isMulti = keys.every(k => !isNaN(k)); // 숫자 key만 있으면 반복
+
+        if (isMulti) {
+            keys.forEach(key => {
+                addDiv(content[key]);
+            });
+            return;
+        }
+    }
+
+    const target = document.querySelector(content.target);
+    if (!target) {
+        console.warn("대상 요소를 찾을 수 없습니다:", content.target);
+        return;
+    }
+
+    const article = document.createElement("article");
+    const div = document.createElement("div");
+    div.innerHTML = content.text;
+
+    article.appendChild(div);
+    target.appendChild(article);
 }
+
 
 function addImg(content) {
     if(content == undefined) return;

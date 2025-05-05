@@ -4,12 +4,11 @@ function navi (menu, url)
     this.url = url;
 }
 
-let js = new navi('Js', './js.html');
-let bj = new navi('백준', 'url');
-let al = new navi('알고리즘', 'url');
-let Uni = new navi('Unity', 'Unity.html');
+let Web = new navi('Web', './Web.html');
+let Alg = new navi('알고리즘', './Alg.html');
+let Uni = new navi('Unity', './Unity.html');
 
-var menu_list = [js, bj , al, Uni];
+var menu_list = [Web , Alg, Uni];
 
 const nav = document.getElementById('nav');
 

@@ -1,0 +1,11 @@
+{
+    "0" : {
+        "target": ".Top",
+        "text" : "<p><h1>Web 101</h1></p>"
+    },
+
+    "1" : {
+        "target" : ".Mid",
+        "text" : "<div class='web101_mid'><p>web 101 제작<br> <a href='' target=_self>github 주소</a> </p></div>"
+    }
+}

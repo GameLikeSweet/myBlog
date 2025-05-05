@@ -23,6 +23,7 @@ header {
   overflow: hidden;
   background-color: lightskyblue;
   box-sizing: border-box;
+  border-bottom-style: solid;
   position: fixed;
   display: flex;
   left: 50%;
@@ -67,7 +68,6 @@ header nav li a {
   height: 1000px;
   box-sizing: border-box;
   background-color: lemonchiffon;
-  border-right-style: solid;
   float: left;
   position: fixed;
   display: flex;
@@ -119,6 +119,7 @@ nav ul li {
 
 /*메인*/
 #main {
+  border-left-style: solid;
   width: 1000px;
   height: 3400px;
   margin: 0px auto;
@@ -160,5 +161,9 @@ article {
   background-color: white;
 }
 .New article {
+  transition-duration: 1s;
   height: inherit;
+}
+.New article:hover {
+  transform: scale(110%);
 }/*# sourceMappingURL=index.css.map */
