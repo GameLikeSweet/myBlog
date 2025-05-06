@@ -1,47 +1,70 @@
 <html>
-    <head>
-        <meta charset="uft-8">
-        <title>Myblog</title>
-        <link rel="stylesheet" type="text/css" href="default.css">
-        <link rel="stylesheet" type="text/css" href="index.css">
-    </head>
-    <body>
-        <header>
-            <div><a href="./index.html"><img src="./resource/logo.png"><p>My Blog</p></a></div>
-            <nav>
-                <ul id="nav">
-                    <script src="Js/nav.js"></script>
-                </ul>
-            </nav>
-        </header>
 
-        <div class="profile">
-            <div class="myimg">
-                <img src="./resource/Me.jpg">
-                <p><h1>PSH</h1>박성훈</p>
-            </div>
-            <div class="myprofile">
-                <ul>
-                    <li><a href="https://github.com/GameLikeSweet" target="_blank">github</a></li>
-                    <li>tjdgns9978@gmail.com</li>
-                </ul>
-            </div>
-        </div>
-        <div id="main">
-        </div>
+<head>
+    <meta charset="uft-8">
+    <title>Myblog</title>
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-        <script src="Js/section.js"></script>
-        <script src="Js/article.js"></script>
-        <script>
-            mkSection("Home");
-            mkArticle({target:".Home", title:"homeL"})
-            mkArticle({target:".Home", title:"homeR"})
-            addImg({target: ".homeL", text:"./resource/home.png"})
-            addDiv('/Json/Home.json')
-            mkSection("New");
-            mkArticle({target: '.New', title:"newL"});
-            mkArticle({target: '.New', title:"newR"});
-            addDiv({target: ".newL", text: "Test"})
-        </script>
-    </body>
+</head>
+
+<body>
+    <header>
+        <div><a href="./index.html"><img src="./resource/logo.png">
+                <p>My Blog</p>
+            </a></div>
+        <nav>
+            <ul id="nav">
+                <script src="Js/nav.js"></script>
+            </ul>
+        </nav>
+    </header>
+    <aside></aside>
+    <div class="profile">
+        <div class="myimg">
+            <img src="./resource/Me.jpg">
+            <p>
+            <h1>PSH</h1>박성훈</p>
+        </div>
+        <div class="myprofile">
+            <ul>
+                <li><a href="https://github.com/GameLikeSweet" target="_blank">github</a></li>
+                <li>tjdgns9978@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <section class="Home">
+            <article class="homeL"></article>
+            <article class="homeR">
+                <p>
+                <h1>개발자 박성훈의 블로그입니다.</h1><br>새로 배워나가는것들의 정리 및 연구를 기록하기 위한 공간입니다.</p>
+            </article>
+        </section>
+        <section class="News">
+            <article>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </article>
+        </section>
+    </div>
+    <script src="./Js/swiper.js"></script>
+</body>
+
 </html>

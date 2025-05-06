@@ -8,8 +8,9 @@ let Web = new navi('Web', './Web.html');
 let Alg = new navi('알고리즘', './Algorithm.html');
 let Uni = new navi('Unity', './Unity.html');
 let Git = new navi("Git", './Git.html');
+let Lib = new navi('라이브러리', './Library.html');
 
-var menu_list = [Web , Alg, Uni, Git];
+var menu_list = [Web ,Git, Lib ,Alg, Uni,];
 
 const nav = document.getElementById('nav');
 
