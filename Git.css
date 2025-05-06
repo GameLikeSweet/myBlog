@@ -12,13 +12,6 @@ article {
   margin: 30px auto;
 }
 
-.topGithub .githubLink a {
+a {
   color: black;
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}/*# sourceMappingURL=Web.css.map */
+}/*# sourceMappingURL=Git.css.map */

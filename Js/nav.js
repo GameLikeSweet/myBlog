@@ -5,7 +5,7 @@ function navi (menu, url)
 }
 
 let Web = new navi('Web', './Web.html');
-let Alg = new navi('알고리즘', './Alg.html');
+let Alg = new navi('알고리즘', './Algorithm.html');
 let Uni = new navi('Unity', './Unity.html');
 let Git = new navi("Git", './Git.html');
 

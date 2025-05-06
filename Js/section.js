@@ -3,7 +3,7 @@ function mkSection(title) {
 
     if( title == undefined) section.innerText = 'section';
     else {
-        section.innerText = title;
+        //section.innerText = title;
         section.classList.add(title);
     }
 

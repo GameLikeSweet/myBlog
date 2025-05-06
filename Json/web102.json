@@ -1,0 +1,28 @@
+{
+    "0" : {
+        "target": ".topGithub",
+        "title" : "topName",
+        "text" : "<img src='./resource/web102/index.png'><p><h1>Web 102</h1></p>"
+    },
+
+    "1" : {
+        "target" : ".topGithub",
+        "title" : "githubLink",
+        "text" : "<div class='web102_mid'><a href='https://github.com/GameLikeSweet/web102' target=_self> -> github 리포지토리 주소</a> </p></div>"
+    },
+    "2" :{
+        "target" : ".topGithub",
+        "title" : "topAbout1",
+        "text" : "<p>style을 분리하고 id와 class를 이용하여 같은 그룹의 엘리먼트를 더 쉽고 편하게 관리할 수 있도록 구성하는것을 목표로한다.</p>"
+    },
+    "3" :{
+        "target" : ".topGithub",
+        "title" : "topAbout2",
+        "text" : "<p>관계 연산자(Combinator Selector)와 수도 클레스 선택자(Pseudo-class Selector)등을 이용하여 원하는 대상에게 style을 적용을 하는것을 연습한다.</p>"
+    },
+    "4" : {
+        "target" : ".midMain",
+        "title" : "midAbout",
+        "text" : "<img src='./resource/web102/html.png'>"
+    }
+}
