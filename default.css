@@ -105,6 +105,34 @@ header nav li a {
   color: black;
 }
 
+aside {
+  float: left;
+  position: fixed;
+  display: flex;
+  width: 200px;
+  top: 30%;
+  right: calc(50% - 750px);
+  margin-top: 100px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: pink;
+}
+aside ul {
+  padding: 0 20px;
+}
+aside ul li {
+  width: 160px;
+}
+aside ul li a {
+  color: black;
+  text-decoration: none;
+}
+aside ul li:first-child {
+  font-size: large;
+  text-decoration: underline;
+  list-style: none;
+}
+
 /*네비*/
 nav {
   float: right;

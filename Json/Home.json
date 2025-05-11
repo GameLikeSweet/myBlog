@@ -1,5 +1,33 @@
 {
-    "target": ".homeR" ,
-    "title" : "aboutMe",
-    "text":"<p><h1>개발자 박성훈의 블로그입니다.</h1><br>새로 배워나가는것들의 정리 및 연구를 기록하기 위한 공간입니다.</p>"
+    "0": {
+        "type": "section",
+        "target": "main",
+        "title": "home",
+        "0": {
+            "type": "article",
+            "title": "homeL",
+            "0": "<img src='./resource/home.png'>"
+        },
+        "1": {
+            "type": "article",
+            "title": "homeR",
+            "0": "<div><p><h1>개발자 박성훈의 개인 블로그입니다.</h1>새로 배운 내용을 정리하고 공유하는 공간입니다.</p></div>",
+            "1": "<ul><li>HTML</li><li>JS</li><li>JQuery</li><li>Git</li></ul>"
+        }
+    },
+    "1": {
+        "type": "section",
+        "target": "main",
+        "title": "news",
+        "0": {
+            "type": "article",
+            "title": "news1",
+            "0": "<div><p>This is test 1</p></div>"
+        },
+        "1": {
+            "type": "article",
+            "title": "news2",
+            "0": "<div><p>This is test 1</p></div>"
+        }
+    }
 }

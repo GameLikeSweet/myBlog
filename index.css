@@ -9,7 +9,6 @@ section {
 
 article {
   width: 320px;
-  height: 170px;
   padding: 10px;
   background-color: orange;
   margin: 30px auto;
@@ -22,6 +21,26 @@ article {
 }
 
 .homeR {
+  background-color: lightgray;
+}
+.homeR ul {
+  padding: 15px;
+}
+.homeR ul li {
+  margin: 3px 0;
+}
+
+.slider {
+  background-color: pink;
+}
+.slider .swiperBox {
+  background-color: white;
+  width: 800px;
+  overflow: hidden;
+}
+.slider .swiperBox .swiper {
+  width: 600px;
+  height: 300px;
   background-color: lightgray;
 }
 

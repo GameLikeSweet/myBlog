@@ -1,50 +1,66 @@
 /*기본틀*/
-*{margin:0px; padding:0px;}
-body{
-    font-family: 'Verdana'; font-size: 16px;
-    color:black; line-height: 28px;
-    margin:0 auto;
-    display:flex;
+* {
+    margin: 0px;
+    padding: 0px;
 }
+
+body {
+    font-family: 'Verdana';
+    font-size: 16px;
+    color: black;
+    line-height: 28px;
+    margin: 0 auto;
+    display: flex;
+}
+
 /*헤더*/
-header{
-    width: 1000px; height: 100px;
-    margin: 0px auto; padding: 10px 30px;
-    overflow:hidden;
+header {
+    width: 1000px;
+    height: 100px;
+    margin: 0px auto;
+    padding: 10px 30px;
+    overflow: hidden;
     background-color: #95C5D4;
     box-sizing: border-box;
-    border-bottom-style:solid;
-    position:fixed;
-    display:flex;
-    left:50%;
+    border-bottom-style: solid;
+    position: fixed;
+    display: flex;
+    left: 50%;
     transform: translateX(-50%);
-    div{
-        display:flex;
+
+    div {
+        display: flex;
         width: 200px;
-        margin:auto 0;
-        a{
-            display:flex;
+        margin: auto 0;
+
+        a {
+            display: flex;
             text-decoration: none;
-            color:black;
-            img{
-                width:50px;
+            color: black;
+
+            img {
+                width: 50px;
                 height: 50px;
                 margin-right: 20px;
                 object-fit: contain;
             }
-            p{
-                padding:10px 0;
-                display:flex;
+
+            p {
+                padding: 10px 0;
+                display: flex;
             }
         }
     }
-    nav{
-        width:800px;
-        margin:auto 0;
-        display:flex;
-        li{
+
+    nav {
+        width: 800px;
+        margin: auto 0;
+        display: flex;
+
+        li {
             margin: 0 10px;
-            a{
+
+            a {
                 background-color: none;
                 text-decoration: none;
                 color: #999999
@@ -55,62 +71,103 @@ header{
 
 
 @mixin aside () {
-    width: 250px; height:1000px;
+    width: 250px;
+    height: 1000px;
     box-sizing: border-box;
     background-color: #FCD6B3
 }
 
 /*사이드*/
-.profile{
+.profile {
     @include aside;
-    float:left;
-    position:fixed;
-    display:flex;
+    float: left;
+    position: fixed;
+    display: flex;
     left: calc(50% - 750px);
     padding-top: 100px;
     flex-direction: column;
     flex-wrap: wrap;
-    div{
-        padding:10px;
+
+    div {
+        padding: 10px;
         text-align: center;
-        img{
-            width:150px;
-            height:150px;
-            margin:10px 0;
+
+        img {
+            width: 150px;
+            height: 150px;
+            margin: 10px 0;
             border-radius: 50%;
             object-fit: cover;
         }
     }
 
-    ul{
+    ul {
         list-style: none;
         background-color: white;
-        width:100%;
-        li{
-            margin:2px;
+        width: 100%;
+
+        li {
+            margin: 2px;
             word-break: break-all;
             border-style: solid;
-            a{
+
+            a {
                 text-decoration: none;
-                color:black
+                color: black
+            }
+        }
+    }
+}
+
+aside {
+    float: left;
+    position: fixed;
+    display: flex;
+    width: 200px;
+    top: 30%;
+    right: calc(50% - 750px);
+    margin-top: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: pink;
+
+    ul {
+        padding: 0 20px;
+
+        li {
+            width: 160px;
+
+            a {
+                color: black;
+                text-decoration: none;
+
+            }
+
+            &:first-child {
+                font-size: large;
+                text-decoration: underline;
+                list-style:none;
             }
         }
     }
 }
 
 /*네비*/
-nav
-{
-    float: right; overflow: hidden;
+nav {
+    float: right;
+    overflow: hidden;
     position: relative;
-    ul{
-        overflow:hidden;
-        li{
+
+    ul {
+        overflow: hidden;
+
+        li {
             list-style: none;
             float: left;
-            padding:5px;
-            a{
-                color:black
+            padding: 5px;
+
+            a {
+                color: black
             }
         }
     }
@@ -119,17 +176,19 @@ nav
 }
 
 /*메인*/
-#main
-{
-    border-left-style:solid;
-    width:1000px; height:3400px;
-    margin:0px auto; margin-top: 100px; padding: 10px;
+#main {
+    border-left-style: solid;
+    width: 1000px;
+    height: 3400px;
+    margin: 0px auto;
+    margin-top: 100px;
+    padding: 10px;
     background-color: #E6ECF2;
     top: 60px;
     box-sizing: border-box;
 }
 
-img{
+img {
     object-fit: cover;
-    width:100%;
+    width: 100%;
 }

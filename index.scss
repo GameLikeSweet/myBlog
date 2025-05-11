@@ -9,7 +9,7 @@ section
 }
 article
 {
-    width:320px; height: 170px;
+    width:320px;
     padding: 10px;
     background-color: orange;
     margin: 30px auto;
@@ -24,6 +24,26 @@ article
 
 .homeR{
     background-color: lightgray;
+    ul{
+        padding:15px;
+        li{
+            margin: 3px 0;
+        }
+    }
+}
+
+.slider{
+    background-color: pink;
+    .swiperBox {
+        background-color: white;
+        width: 800px;
+        overflow: hidden;
+        .swiper{
+            width:600px;
+            height:300px;
+            background-color: lightgray;
+        }
+      }
 }
 .New{
     background-color:white;
