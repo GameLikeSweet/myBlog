@@ -23,3 +23,15 @@ for (let i = 0; i < menu_list.length; i++) {
     nav.appendChild(li);
     //document.write("<li><a href = " + menu_list[i].url + '>'+ menu_list[i].menu + "</a></li>");
 }
+
+let tl = gsap.timeline();
+
+for (let i = 0; i < menu_list.length; i++) {
+    tl.from(".tl" + i,
+        {
+            y: -100,
+            opacity: 0,
+            duration : 1
+        }
+    )
+}

@@ -137,17 +137,18 @@ aside {
         li {
             width: 160px;
 
-            a {
-                color: black;
+            button {
+                background: none;
+                border: none;
                 text-decoration: none;
-
+                cursor: pointer;
             }
+        }
 
-            &:first-child {
-                font-size: large;
-                text-decoration: underline;
-                list-style:none;
-            }
+        li:first-child {
+            font-size: large;
+            text-decoration: underline;
+            list-style: none;
         }
     }
 }
