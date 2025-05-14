@@ -1,5 +1,5 @@
 {
-    "css" : "./web101.css",
+    "css": "./web101.css",
     "0": {
         "type": "section",
         "target": "main",
@@ -12,7 +12,7 @@
         "1": {
             "type": "article",
             "title": "githubLink",
-            "0": "<div class='web101_mid'><a href='https://github.com/GameLikeSweet/web101' target=_self> -> github 리포지토리 주소</a> </p></div>",
+            "0": "<div class='web101_mid'><a href='https://github.com/GameLikeSweet/web101' target=_blank> -> github 리포지토리 주소</a> </p></div>",
             "1": "<p>기본적인 HTML의 엘리먼트를 알아보고 사용해보는것을 목적으로 작성한다.<br> body 내부에 h1, div, a 등의 자주 사용하는 여러 엘리먼트를 사용해보고 페이지 이동을 구현한다.</p>"
         }
     },
@@ -22,13 +22,35 @@
         "title": "web101Mid",
         "0": {
             "type": "article",
+            "title": "headNBody",
+            "0": "<div><h2>Head</h2>",
+            "1": "<p>헤드는 페이지에 표시되지는 않지만 대신에 페이지에 대한 메타데이터(meatdata)를 포함하고있다.</p>",
+            "2": "<h2>Body</h2>",
+            "3": "<p>body엘리먼트는 HTML의 문서의 내용을 표현한다. 한 문서에는 하나의 body엘리먼트만 존재할 수 있다. </p></div>"
+        },
+        "1": {
+            "type": "article",
+            "title": "elements",
+            "0" : "<div>",
+            "1" : "<h2>div</h2>",
+            "2" : "<p> div엘리먼트는 컨텐츠를 담는 순수한 컨테이너로 CSS를 통해 직접 스타일을 적용하거나 부모 엘리먼트의 영항 없이 해당 엘리먼트 자체는 콘텐츠나 레이아웃에 아무런 영향을 주지 않는다.</p>",
+            "3" : "<h2>P and Span</h2>"
+        }
+    },
+    "2": {
+        "type": "section",
+        "target": "main",
+        "title": "web101Bot",
+        "0": {
+            "type": "article",
             "title": "web101Img",
             "0": "<img src='./resource/web101/html.png'>"
         },
         "1": {
             "type": "article",
             "title": "midAbout",
-            "0": "<p>HTML 초기 코드와 기초적인 엘리먼트를 사용하였고 style은 기본적인 크기나 href 및 src 정도만 사용하였다.</p>"
+            "0": "<p>HTML 초기 코드와 기초적인 엘리먼트를 사용하였고 style은 기본적인 크기나 href 및 src 정도만 사용하였다. 모든 엘리먼트들이 기본 설정 그대로 나오고 있으며 크기는 내용물의 크기 그대로 나오고 줄 바꿈 또한 컨트롤 할 수 없다.</p>",
+            "1": "<p></p>"
         }
     }
 }

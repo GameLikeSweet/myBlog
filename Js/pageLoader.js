@@ -3,31 +3,33 @@ function loadPage(jsonPath) {
         const $main = $('#main');
         $main.empty();
 
-        // CSS 동적 추가 (중복 방지)
+
         if (data.css) {
             if (!$('link[href="' + data.css + '"]').length) {
                 $('head').append('<link rel="stylesheet" type="text/css" href="' + data.css + '">');
             }
         }
 
-        // 콘텐츠 생성
         $.each(data, function (key, sectionData) {
             if (!isNaN(key)) {
                 if (sectionData.type === 'section') {
                     const $section = $('<section>').addClass(sectionData.title);
                     $main.append($section);
 
-                    $.each(sectionData, function (subKey, articleData) {
+                    $.each(sectionData, function (subKey, blockData) {
                         if (!isNaN(subKey)) {
-                            if (articleData.type === 'article') {
-                                const $article = $('<article>').addClass(articleData.title);
-                                $section.append($article);
+                            if (blockData.type) {
+                                const $element = $('<' + blockData.type + '>').addClass(blockData.title);
+                                $section.append($element);
 
-                                $.each(articleData, function (i, htmlString) {
+                                let combinedHTML = "";
+                                $.each(blockData, function (i, htmlString) {
                                     if (!isNaN(i)) {
-                                        $article.append($(htmlString));
+                                        combinedHTML += htmlString;
                                     }
                                 });
+
+                                $element.append($(combinedHTML));
                             }
                         }
                     });
@@ -35,7 +37,6 @@ function loadPage(jsonPath) {
             }
         });
 
-        // JS 스크립트 추가 (중립적, 단순 추가만 하고 실행 제어는 안 함)
         if (Array.isArray(data.js)) {
             data.js.forEach(function (src) {
                 if (typeof src === 'string' && !$('script[src="' + src + '"]').length) {
