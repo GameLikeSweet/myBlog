@@ -50,5 +50,6 @@
   margin: 5px 0;
   height: 40px;
   width: 150px;
+  transition-property: background-color;
   transition-duration: 1s;
 }/*# sourceMappingURL=webHome.css.map */

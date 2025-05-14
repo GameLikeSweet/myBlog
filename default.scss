@@ -156,11 +156,9 @@ aside {
 /*네비*/
 nav {
     float: right;
-    overflow: hidden;
     position: relative;
 
     ul {
-        overflow: hidden;
 
         li {
             list-style: none;
@@ -181,6 +179,7 @@ nav {
     border-left-style: solid;
     width: 1000px;
     min-height: 1500px;
+    height: fit-content;
     margin: 0px auto;
     margin-top: 100px;
     padding: 10px;

@@ -7,8 +7,9 @@ let Web = new navi('Web', './Web.html');
 let Alg = new navi('알고리즘', './Algorithm.html');
 let Uni = new navi('Unity', './Unity.html');
 let Git = new navi("Git", './Git.html');
+let Lib = new navi("라이브러리", './Library.html');
 
-var menu_list = [Web, Alg, Uni, Git];
+var menu_list = [Web, Git, Alg, Uni, Lib];
 
 const nav = document.getElementById('nav');
 
@@ -31,7 +32,7 @@ for (let i = 0; i < menu_list.length; i++) {
         {
             y: -100,
             opacity: 0,
-            duration : 1
+            duration: 1
         }
     )
 }

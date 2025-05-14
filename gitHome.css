@@ -14,4 +14,13 @@ article {
 
 a {
   color: black;
-}/*# sourceMappingURL=Git.css.map */
+}
+
+.gitCommand {
+  background-color: lightgray;
+  margin: 10px 0;
+}
+
+.gitStart ol {
+  list-style-position: inside;
+}/*# sourceMappingURL=gitHome.css.map */

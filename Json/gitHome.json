@@ -8,10 +8,45 @@
         "0": {
             "title": "aboutGit",
             "type": "article",
-            "0" : "<img src='./resource/Git.png'><p><h1>Git</h1></p>",
-            "1": "<h1>Git이란?</h1>",
+            "0" : "<h1>Git이란?</h1>",
+            "1": "<img src='./resource/Git.png'><p><h1>Git</h1></p>",
             "2": "<div class='gitLink'><a href='https://git-scm.com/' target=_blank> -> git 공식 주소 사이트</a> </p></div>",
             "3" : "<p>Git은 무료 오픈 소스 버전 컨트롤 시스템으로 빠르고 효율적으로 작은 프로젝트부터 대규모 프로젝트까지 모두 처리하도록 설계되어있다.</p>"
+        }
+    },
+    "1" : {
+        "target" : "main",
+        "type" : "section",
+        "title" : "settingGit",
+        "0" : {
+            "title" : "donwloadGit",
+            "type" : "article",
+            "0" : "<div><h2>Git 설치</h2>",
+            "1" : "<img src='./resource/gitDonwload.png'>",
+            "2" : "<p><br>github의 공식 홈페이지에서 쉽게 다운로드 할 수 있으며 setup 파일을 통해 간단하게 설치할 수 있다.</p></div>"
+        },
+        "2" :{
+            "title" : "settingGit",
+            "type" : "article",
+            "0" : "<h1>Git Config</h1><img src='./resource/gitConfig.png'>",
+            "1" : "<div><p>git을 통해서 작업을 커밋(변경 작업들을 저장소에 기록하는 동작)할 시 git은 사용자 정보를 사용한다. 따라서 git설치 후",
+            "2" : "우선 해야 할 것은 사용자 정보를 입력하는것이다.</div>",
+            "3" : "<div class='gitCommand'>git config --global user.name 'tester'<br>",
+            "4" : "git config --global user.email 'tester@test.com'</div>",
+            "5" : "<p>이렇게 설정하면 git을 이용해서 커밋할 때마다 항상 이 정보를 사용하다. 만약 프로젝트마다 따로 관리하고 싶으면 --global을 제거하면 된다.</p>"
+        }
+    },
+    "3" : {
+        "target": "main",
+        "type" : "section",
+        "title" : "gitStart",
+        "0" : {
+            "type" :"article",
+            "title" : "gitInit",
+            "0": "<div><h1>Git Init</h1>",
+            "1" : "<p>git을 시작하려면 git 저장소가 필요하다. 주로 다음 두 가지 중 한 가지 방법으로 Git 저장소를 쓰기 시작한다.</p></div>",
+            "2" : "<ol class='gitCommand'><li>아직 버전관리를 하지 않는 로컬 디렉토리 하나를 선택해서 Git 저장소를 적용하는 방법</li>",
+            "3" : "<li>다른 어딘가에서 Git 저장소를 Clone 하는 방법</li></ol>"
         }
     }
 }
