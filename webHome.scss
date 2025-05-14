@@ -1,5 +1,64 @@
-#main{
-    div{
+#main {
+    div {
         margin-top: 10px;
+    }
+}
+
+
+.webMid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .compare{
+        width: 800px;
+        text-align: center;
+        font-size: 20px;
+    }
+    article {
+        width: 250px;
+        
+        .cssH1,
+        .cssH2,
+        .cssH3,
+        .cssH4 {
+            border: solid;
+            margin: 5px 0;
+            height: 40px;
+        }
+
+        .cssH1 {
+            width: 200px;
+            background-color: red;
+        }
+
+        .cssH2 {
+            width: 175px;
+            background-color: orange
+        }
+
+        .cssH3 {
+            width: 150px;
+            background-color: yellow
+        }
+
+        .cssH4 {
+            width: 125px;
+            background-color: green
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+        .js1,
+        .js2,
+        .js3,
+        .js4{
+            border: solid;
+            margin: 5px 0;
+            height: 40px;
+            width: 150px;
+            transition-duration: 1s;
+        }
     }
 }

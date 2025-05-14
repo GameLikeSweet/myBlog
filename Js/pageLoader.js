@@ -3,13 +3,14 @@ function loadPage(jsonPath) {
         const $main = $('#main');
         $main.empty();
 
-        // css 속성이 있다면 동적으로 추가
+        // CSS 동적 추가 (중복 방지)
         if (data.css) {
-            if (!$('link[href="' + data.css + '"]').length) { // 중복 방지
+            if (!$('link[href="' + data.css + '"]').length) {
                 $('head').append('<link rel="stylesheet" type="text/css" href="' + data.css + '">');
             }
         }
 
+        // 콘텐츠 생성
         $.each(data, function (key, sectionData) {
             if (!isNaN(key)) {
                 if (sectionData.type === 'section') {
@@ -33,6 +34,19 @@ function loadPage(jsonPath) {
                 }
             }
         });
+
+        // JS 스크립트 추가 (중립적, 단순 추가만 하고 실행 제어는 안 함)
+        if (Array.isArray(data.js)) {
+            data.js.forEach(function (src) {
+                if (typeof src === 'string' && !$('script[src="' + src + '"]').length) {
+                    const script = document.createElement('script');
+                    script.src = src;
+                    document.body.appendChild(script);
+                    console.log('동적 JS 추가:', src);
+                }
+            });
+        }
+
     }).fail(function () {
         console.error('JSON 로드 실패:', jsonPath);
     });

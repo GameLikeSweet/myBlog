@@ -1,23 +1,59 @@
 {
-    "css" : "./webHome.css",
-    "0" : {
-        "target" : ".main",
-        "type" : "section",
-        "title" : "webTop",
-        "0" : {
-            "title" : "aboutWebDevelopment",
-            "type" :"article",
-            "0" : "<h1>Web개발이란?</h1>",
-            "1" : "<p>웹 개발은 웹사이트와 웹 애플리케이션을 구축하고 유지보수하는 과정을 말합니다. 크게 프론트엔드 개발, 백엔드 개발, 풀 스택 개발의 세 가지 영역으로 나눌 수 있습니다.</p>"
+    "css": "./webHome.css",
+    "js": [
+        "./Js/compareJS.js"
+    ],
+    "0": {
+        "target": "main",
+        "type": "section",
+        "title": "webTop",
+        "0": {
+            "title": "aboutWebDevelopment",
+            "type": "article",
+            "0": "<h1>Web개발이란?</h1>",
+            "1": "<p>웹 개발은 웹사이트와 웹 애플리케이션을 구축하고 유지보수하는 과정을 말합니다. 크게 프론트엔드 개발, 백엔드 개발, 풀 스택 개발의 세 가지 영역으로 나눌 수 있습니다.</p>"
         },
-        "1" : {
-            "title" : "aboutSkill",
-            "type" : "article" ,
-            "0" : "<h1>웹 개발에 사용되는 주요 기술들</h1>",
-            "1" : "<div class='html'><p>HTML (Hypertext Markup Language) :  </p><p>웹 브라우저에 표시되도록 설계된 문서의 표준 마크업 언어이다. HTML은 웹 콘텐츠 의 내용과 구조를 정의한다. </p></div>",
-            "2" : "<div class='css'><p>CSS (Cascading Style Sheets) :  </p><p>HTML 이나 XML과 같은 마크업 언어로 작성된 문서의 표현과 스타일을 지정하는데 사용되는 스타일 시트 언어이다. </p></div>",
-            "3" : "<div class='js'><p>JavaScript : </p><p>동적으로 변경되는 콘텐츠를 만들고, 멀티미디어를 제어하고, 이미지에 애니메이션을 적용하는 등 거의 모든 작업을 수행할 수 있는 스크립팅 언어이다.</p></div>"
+        "1": {
+            "title": "aboutSkill",
+            "type": "article",
+            "0": "<h1>웹 개발에 사용되는 주요 기술들</h1>",
+            "1": "<div class='html'><p>HTML (Hypertext Markup Language) :  </p><p>웹 브라우저에 표시되도록 설계된 문서의 표준 마크업 언어이다. HTML은 웹 콘텐츠 의 내용과 구조를 정의한다. </p></div>",
+            "2": "<div class='css'><p>CSS (Cascading Style Sheets) :  </p><p>HTML 이나 XML과 같은 마크업 언어로 작성된 문서의 표현과 스타일을 지정하는데 사용되는 스타일 시트 언어이다. </p></div>",
+            "3": "<div class='js'><p>JavaScript : </p><p>동적으로 변경되는 콘텐츠를 만들고, 멀티미디어를 제어하고, 이미지에 애니메이션을 적용하는 등 거의 모든 작업을 수행할 수 있는 스크립팅 언어이다.</p></div>"
+        }
+    },
+    "1": {
+        "target": "main",
+        "type": "section",
+        "title": "webMid",
+        "0": {
+            "title": "compare",
+            "type": "article",
+            "0": "<div><p>HTML, CSS , JS 적용 비교하기</p></div>"
+        },
+        "1": {
+            "title": "html",
+            "type": "article",
+            "0": "<h1>html</h1>",
+            "1": "<h2>h2</h2>",
+            "2": "<h3>h3</h3>",
+            "3": "<h4>h4</h4>"
+        },
+        "2": {
+            "title": "htmlcss",
+            "type": "article",
+            "0": "<h1 class='cssH1'>+ css</h1>",
+            "1": "<h2 class='cssH2'>h2</h2>",
+            "2": "<h3 class='cssH3'>h3</h3>",
+            "3": "<h4 class='cssH4'>h4</h4>"
+        },
+        "3": {
+            "title": "htmlcssjs",
+            "type": "article",
+            "0": "<h1 class='js1'>+ js</h1>",
+            "1": "<h2 class='js2'>h2</h2>",
+            "2": "<h3 class='js3'>h3</h3>",
+            "3": "<h4 class='js4'>h4</h4>"
         }
     }
-
 }

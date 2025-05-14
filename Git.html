@@ -3,7 +3,7 @@
     <meta charset="uft-8">
     <title>Myblog</title>
     <link rel="stylesheet" type="text/css" href="default.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="Web.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
@@ -19,6 +19,13 @@
             </nav>
         </header>
 
+        <aside>
+            <div class="pageList">
+                <ul>
+                    <li><button onclick="loadPage('./Json/webHome.json')">Git Home</button></li>
+                </ul>
+            </div>
+        </aside>
         <div class="profile">
             <div class="myimg">
                 <img src="./resource/Me.jpg">
@@ -37,11 +44,7 @@
         <script src="Js/section.js"></script>
         <script src="Js/article.js"></script>
         <script>
-            mkSection("Git");
-            mkArticle({target: ".Git" , title: "aboutGit"});
-            mkSection("explainGit");
-            mkArticle({target: ".explainGit", title : "whatIsGit"})
-            addDiv('./Json/git000.json');
+            loadPage('./Json/gitHome.json');
         </script>
     </body>
 </html>

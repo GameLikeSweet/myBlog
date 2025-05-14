@@ -1,0 +1,17 @@
+
+{
+    "css": "./gitHome.css",
+    "0": {
+        "target": "main",
+        "type": "section",
+        "title": "gitTop",
+        "0": {
+            "title": "aboutGit",
+            "type": "article",
+            "0" : "<img src='./resource/Git.png'><p><h1>Git</h1></p>",
+            "1": "<h1>Git이란?</h1>",
+            "2": "<div class='gitLink'><a href='https://git-scm.com/' target=_self> -> git 공식 주소 사이트</a> </p></div>",
+            "3" : "<p>Git은 무료 오픈 소스 버전 컨트롤 시스템으로 빠르고 효율적으로 작은 프로젝트부터 대규모 프로젝트까지 모두 처리하도록 설계되어있다.</p>"
+        }
+    }
+}
