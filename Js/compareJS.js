@@ -1,34 +1,42 @@
-var color = ["red", "orange", "yellow", "green", "blue", "indigo", "purple"];
-var Num = 0;
-var i = 0;
-
-var isWorking = false;
-
-function changeC() {
-    
-    let target = document.querySelector(".js" + (i + 1));
-    if (target) {
-        target.style.backgroundColor = color[Num];
-    } else {
-        setTimeout(changeC, 1500);
+(function(){
+    if (window.compareControl && window.compareControl.timerId) {
+        clearTimeout(window.compareControl.timerId);
+        console.log('compareJS: 기존 changeC 중단');
     }
-    isWorking = true;
-    Num++;
-    Num %= 7;
-    i++;
-    i %= 4;
 
-    // 재귀 호출로 계속 반복
-    console.log("changeC is working");
-    if (isWorking) setTimeout(changeC, 1500);
-}
+    window.compareControl = {
+        Num: 0,
+        i: 0,
+        timerId: null,
+        stop: function(){
+            if (this.timerId) {
+                clearTimeout(this.timerId);
+                console.log('compareJS: 수동 종료');
+            }
+            this.timerId = null;
+        }
+    };
 
-// 스크립트 로딩 직후 바로 시작 (load에 의존하지 않음)
+    var color = ["red", "orange", "yellow", "green", "blue", "indigo", "purple"];
 
-if (isWorking) {
-    Num = 0;
-    i = 0;
-}
-else {
-    changeC();
-}
+    function changeC() {
+        console.log('changeC is Worked');
+        if (!document.querySelector('.js1')) {
+            console.log('compareJS: 대상 없음 → 실행 취소');
+            return;
+        }
+        let target = document.querySelector(".js" + (window.compareControl.i + 1));
+        if (target) {
+            target.style.backgroundColor = color[window.compareControl.Num];
+        }
+
+        window.compareControl.Num = (window.compareControl.Num + 1) % 7;
+        window.compareControl.i = (window.compareControl.i + 1) % 4;
+
+        window.compareControl.timerId = setTimeout(changeC, 1500);
+    }
+
+    window.compareControl.timerId = setTimeout(changeC, 1500);
+
+    console.log('compareJS: changeC 시작');
+})();

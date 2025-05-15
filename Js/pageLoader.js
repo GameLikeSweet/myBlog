@@ -2,11 +2,13 @@ function loadPage(jsonPath) {
     $.getJSON(jsonPath, function (data) {
         const $main = $('#main');
         $main.empty();
+        $("link[loadBy='pageLoader']").remove();
+        $("script[loadBy='pageLoader']").remove();
 
 
         if (data.css) {
             if (!$('link[href="' + data.css + '"]').length) {
-                $('head').append('<link rel="stylesheet" type="text/css" href="' + data.css + '">');
+                $('head').append('<link rel="stylesheet" type="text/css" href="' + data.css + '" loadBy="pageLoader">');
             }
         }
 
@@ -41,6 +43,7 @@ function loadPage(jsonPath) {
             data.js.forEach(function (src) {
                 if (typeof src === 'string' && !$('script[src="' + src + '"]').length) {
                     const script = document.createElement('script');
+                    script.setAttribute('loadBy', "pageLoader");
                     script.src = src;
                     document.body.appendChild(script);
                     console.log('동적 JS 추가:', src);
