@@ -34,6 +34,16 @@
             "3" : "<div class='gitCommand'>git config --global user.name 'tester'<br>",
             "4" : "git config --global user.email 'tester@test.com'</div>",
             "5" : "<p>이렇게 설정하면 git을 이용해서 커밋할 때마다 항상 이 정보를 사용하다. 만약 프로젝트마다 따로 관리하고 싶으면 --global을 제거하면 된다.</p>"
+        },
+        "3" : {
+            "title" : "gitRemote",
+            "type" : "article",
+            "0" : "<h2>Git remote</h2>",
+            "1" : "<p>remote 저장소란 인터넷이나 네트워크 어딘가에 있는 저장소를 말한다.",
+            "2" : "이 리모트 저장소를 관리할 줄 알아야 다른 사람과 함께 협업할 수 있다",
+            "3" : "<br>리모트 저장소는 관리하면서 데이터를 거기에 push 하거나 pull 할 수 있다.</p>",
+            "4" : "<div class='gitCommand'>git remote<br>git remote add '이름' '저장소 url'</div>",
+            "5" : "<p> git remote 명령을 통해서 remote 저장소를 확인하고 git remote add 명령을 통해서 저장소를 추가 할 수 있다.</p>"
         }
     },
     "3" : {
@@ -42,11 +52,22 @@
         "title" : "gitStart",
         "0" : {
             "type" :"article",
-            "title" : "gitInit",
+            "title" : "gitInit1",
             "0": "<div><h1>Git Init</h1>",
             "1" : "<p>git을 시작하려면 git 저장소가 필요하다. 주로 다음 두 가지 중 한 가지 방법으로 Git 저장소를 쓰기 시작한다.</p></div>",
             "2" : "<ol class='gitCommand'><li>아직 버전관리를 하지 않는 로컬 디렉토리 하나를 선택해서 Git 저장소를 적용하는 방법</li>",
             "3" : "<li>다른 어딘가에서 Git 저장소를 Clone 하는 방법</li></ol>"
+        },
+        "1" : {
+            "type" : "article",
+            "title" : "gitInit2",
+            "0" : "<h1>기존 디렉토리를 Git 저장소로 만들기</h1>",
+            "1" : "<div><p>Git을 사용하여 버전관리를 하지 안는 기존 프로젝트를 Git으로 관리하고 싶은경우 우선 해당 프로젝트의 디렉토리로 이동한다</p>",
+            "2" : "<div class='gitCommand'><p>Linux : cd /home/user/new_project<br>Windows : cd /c/user/my_project</p></div>",
+            "3" : "<p> 그리고 아래와 같은 명령을 실행한다. </p>",
+            "4" : "<div class='gitCommand'>git init </div>",
+            "5" : "<p>이 명령은 .git이라는 하위 디렉토리를 만들고 .git 디렉토리에는 저장소에 필요한 파일이 들어간다",
+            "6" : "이 때 아직 프로젝트의 어떤 파일도 관리하지 않는다.</p></div>"
         }
     }
 }

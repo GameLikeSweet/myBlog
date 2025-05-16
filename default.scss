@@ -4,6 +4,63 @@
     padding: 0px;
 }
 
+#hamburger {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1100;
+  border-radius: 5px;
+  font-size: 20px;
+  width:100px;
+  height:100px;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  article {
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  aside,
+  .profile {
+    display: none;
+  }
+
+  #main {
+    width: 100%;
+  }
+
+  header {
+    img {
+      width: 150px;
+      height: auto;
+    }
+  }
+
+  body {
+    font-size: 16px;
+  }
+  aside {
+    transform: translateX(-100%);
+  }
+
+  #hamburger {
+    display: block;
+  }
+}
+
 body {
     font-family: 'Verdana';
     font-size: 16px;
@@ -72,7 +129,7 @@ header {
 
 @mixin aside () {
     width: 250px;
-    height: 1000px;
+    height: 100vh;
     box-sizing: border-box;
     background-color: #FCD6B3
 }
@@ -129,19 +186,22 @@ aside {
     margin-top: 100px;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: pink;
+    background-color: E6ECF2;
 
     ul {
-        padding: 0 20px;
 
         li {
-            width: 160px;
+            width: 100%;
+            box-sizing: border-box;
+            list-style-position: inside;
+            padding: 0 5px;
 
             button {
                 background: none;
                 border: none;
                 text-decoration: none;
                 cursor: pointer;
+
             }
         }
 
@@ -149,6 +209,8 @@ aside {
             font-size: large;
             text-decoration: underline;
             list-style: none;
+            border-bottom: solid;
+            background-color: #95C5D4;
         }
     }
 }
@@ -191,4 +253,9 @@ nav {
 img {
     object-fit: cover;
     width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
