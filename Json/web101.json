@@ -12,7 +12,7 @@
         "1": {
             "type": "article",
             "title": "githubLink",
-            "0": "<div class='web101_mid'><a href='https://github.com/GameLikeSweet/web101' target=_blank> -> github 리포지토리 주소</a> </p></div>",
+            "0": "<div class='web101Link'><a href='https://github.com/GameLikeSweet/web101' target=_blank> -> github 리포지토리 바로가기</a> </p></div>",
             "1": "<p>기본적인 HTML의 엘리먼트를 알아보고 사용해보는것을 목적으로 작성한다.<br> body 내부에 h1, div, a 등의 자주 사용하는 여러 엘리먼트를 사용해보고 페이지 이동을 구현한다.</p>"
         }
     },

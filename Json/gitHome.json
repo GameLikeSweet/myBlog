@@ -83,7 +83,7 @@
             "title" : "gitCommit",
             "0" : "<h1>Git commit</h1>",
             "1" : "<p>현재 작업하고 있는 폴더 및 파일들의 상태를 저장할 수 있다. 이 때 저장한 커밋들을 이용해서 작업물의 상태를 해당 시점으로 되돌릴 수 있다.</p>",
-            "2" : "<div class='gitCommand'><p>git commit -m '설명'</p></div>"
+            "2" : "<div class='gitCommand'><p>git commit<br>또는<br>git commit -m '설명' // -m로 커밋 메시지 작성</p></div>"
         }
 
     }
