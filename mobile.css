@@ -1,0 +1,81 @@
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  * {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  header, section, article, #main, nav, footer {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  #main {
+    margin-top: 100px;
+    padding-top: 50px;
+  }
+  .profile {
+    display: none !important;
+  }
+  #hamburger {
+    display: inline-block !important;
+    position: fixed;
+    top: 120px;
+    right: 15px;
+    left: auto;
+    z-index: 2000;
+    background-color: #ff5722;
+    color: white;
+    font-size: 24px;
+    padding: 10px 12px;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+    will-change: left, right;
+    transition: left 0.4s, right 0.4s;
+  }
+  #hamburger.open {
+    left: 15px;
+    right: auto;
+  }
+  aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    z-index: 1500;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform;
+    transition: transform 0.4s, opacity 0.4s, visibility 0.4s;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  aside.open {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+  }
+  h1, h2, h3, h4, p, ul, li, a, span, button, div {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}/*# sourceMappingURL=mobile.css.map */

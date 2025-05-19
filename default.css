@@ -5,54 +5,6 @@
   padding: 0px;
 }
 
-#hamburger {
-  display: none;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: #ff5722;
-  color: white;
-  padding: 10px 15px;
-  cursor: pointer;
-  z-index: 1100;
-  border-radius: 5px;
-  font-size: 20px;
-  width: 100px;
-  height: 100px;
-}
-
-@media (max-width: 768px) {
-  section {
-    width: 100%;
-    padding: 10px;
-    margin: 0 auto;
-  }
-  article {
-    width: 100%;
-    padding: 10px;
-    margin: 20px auto;
-  }
-  aside,
-  .profile {
-    display: none;
-  }
-  #main {
-    width: 100%;
-  }
-  header img {
-    width: 150px;
-    height: auto;
-  }
-  body {
-    font-size: 16px;
-  }
-  aside {
-    transform: translateX(-100%);
-  }
-  #hamburger {
-    display: block;
-  }
-}
 body {
   font-family: "Verdana";
   font-size: 16px;
@@ -223,4 +175,21 @@ img {
 a {
   text-decoration: none;
   color: black;
+}
+
+#hamburger {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 12px;
+  cursor: pointer;
+  z-index: 2000; /* header보다 확실히 위 */
+  border-radius: 4px;
+  font-size: 24px;
+  width: auto; /* 고정 크기 제거 */
+  height: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=default.css.map */

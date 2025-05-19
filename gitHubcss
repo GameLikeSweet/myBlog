@@ -1,0 +1,26 @@
+section {
+  width: 900px;
+  padding: 10px;
+  margin: 10 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 700px;
+  padding: 10px;
+  margin: 30px auto;
+}
+
+a {
+  color: black;
+}
+
+.gitCommand {
+  background-color: lightgray;
+  margin: 10px 0;
+}
+
+.gitStart ol {
+  list-style-position: inside;
+}/*# sourceMappingURL=gitHome.css.map */
