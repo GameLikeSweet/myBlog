@@ -1,4 +1,5 @@
 {
+    "js" : ["./Js/swiper.js"],
     "0": {
         "type": "section",
         "target": "main",
@@ -21,13 +22,12 @@
         "title": "news",
         "0": {
             "type": "article",
-            "title": "news1",
-            "0": "<div><p>This is test 1</p></div>"
-        },
-        "1": {
-            "type": "article",
-            "title": "news2",
-            "0": "<div><p>This is test 1</p></div>"
+            "title": "slide",
+            "0": "<div class='swiper'><div class='swiper-wrapper'>",
+            "1": "<div class='swiper-slide'><img src='./resource/homeSlide1.png'></div>",
+            "2" : "<div class='swiper-slide'><img src='./resource/homeSlide2.png'></div>",
+            "3" : "<div class='swiper-slide'><img src='./resource/homeSlide3.png'></div>",
+            "4" : "</div><div class='swiper-pagination'></div></div>"
         }
     }
 }
