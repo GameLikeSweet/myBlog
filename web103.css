@@ -1,3 +1,40 @@
 li {
   list-style-position: inside;
+}
+
+.testPosition {
+  background-color: white;
+}
+.testPosition .testStatic,
+.testPosition .testRelative,
+.testPosition .testAbsolute,
+.testPosition .testFixed {
+  top: 10%;
+}
+.testPosition .testStatic {
+  padding: 5px;
+  background-color: lightblue;
+  position: static;
+  height: 400px;
+}
+.testPosition .testStatic .testRelative {
+  padding: 5px;
+  background-color: lightgray;
+  position: relative;
+  height: 300px;
+}
+.testPosition .testStatic .testRelative .testAbsolute {
+  padding: 5px;
+  background-color: lightcyan;
+  position: absolute;
+  height: 200px;
+}
+.testPosition .testStatic .testRelative .testAbsolute .testFixed {
+  padding: 5px;
+  background-color: lightyellow;
+  position: fixed;
+  height: 100px;
+}
+.testPosition .testStatic .testRelative .testAbsolute .unFixed {
+  position: relative;
 }/*# sourceMappingURL=web103.css.map */

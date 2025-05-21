@@ -1,3 +1,41 @@
 li{
     list-style-position: inside;
 }
+
+.testPosition{
+    background-color: white;
+    .testStatic,
+    .testRelative,
+    .testAbsolute,
+    .testFixed{
+        top: 10%;
+    }
+
+    .testStatic{
+        padding: 5px;
+        background-color:lightblue;
+        position:static;
+        height: 400px;
+        .testRelative{
+            padding: 5px;
+            background-color: lightgray;
+            position:relative;
+            height: 300px;
+            .testAbsolute{
+                padding: 5px;
+                background-color: lightcyan;
+                position:absolute;
+                height: 200px;
+                .testFixed{
+                    padding: 5px;
+                    background-color: lightyellow;
+                    position:fixed;
+                    height: 100px;
+                }
+                .unFixed{
+                    position:relative;
+                }
+            }
+        }
+    }
+}
