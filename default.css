@@ -16,7 +16,7 @@ body {
 
 /*헤더*/
 header {
-  width: 1000px;
+  width: 70vw;
   height: 100px;
   margin: 0px auto;
   padding: 10px 30px;
@@ -74,7 +74,6 @@ header nav li a {
   float: left;
   position: fixed;
   display: flex;
-  left: calc(50% - 750px);
   padding-top: 100px;
   flex-direction: column;
   flex-wrap: wrap;
@@ -155,7 +154,7 @@ nav ul li a {
 /*메인*/
 #main {
   border-left-style: solid;
-  width: 1000px;
+  width: 70vw;
   min-height: 1500px;
   height: -moz-fit-content;
   height: fit-content;
@@ -192,4 +191,11 @@ a {
   width: auto; /* 고정 크기 제거 */
   height: auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  margin-top: 100px;
+  width: 100%;
+  background-color: lightgray;
+  height: 200px;
 }/*# sourceMappingURL=default.css.map */

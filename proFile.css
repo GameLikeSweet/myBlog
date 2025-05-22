@@ -1,5 +1,5 @@
 section {
-  width: 900px;
+  width: 100%;
   padding: 10px;
   margin: 10 auto;
   display: flex;
@@ -7,7 +7,7 @@ section {
 }
 
 article {
-  width: 320px;
+  width: auto;
   padding: 10px;
   margin: 30px auto;
 }
@@ -37,20 +37,4 @@ article {
 }
 .New article:hover {
   transform: scale(110%);
-}
-
-.slide {
-  width: 1100px;
-  height: 400px;
-}
-
-.swiper {
-  width: 800px;
-  height: 400px;
-}
-
-.swiper-slide {
-  text-align: center;
-  background-color: white;
-  align-content: center;
 }/*# sourceMappingURL=proFile.css.map */
