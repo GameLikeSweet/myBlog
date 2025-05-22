@@ -163,6 +163,7 @@ nav ul li a {
   background-color: #E6ECF2;
   top: 60px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 img {
