@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>Myblog</title>
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <!--외부 라이브러리 CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--개인 js-->
+    <script src="./Js/pageLoader.js"></script>
+</head>
+
+<body>
+    <header>
+        <div><a href="./index.html"><img src="./resource/logo.png">
+                <p>My Blog</p>
+            </a></div>
+        <nav>
+            <ul id="nav">
+                <script src="Js/navHome.js"></script>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="profile">
+        <div class="myimg">
+            <img src="./resource/Me.jpg">
+            <p>
+            <h1>PSH</h1>성훈</p>
+        </div>
+        <div class="myprofile">
+            <ul>
+                <li><a href="https://github.com/GameLikeSweet" target="_blank">github</a></li>
+                <li>tjdgns9978@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+    </div>
+    <script>
+        loadPage('./Json/Home.json');
+        AOS.init();
+    </script>
+    <script src="./Js/gsap.js"></script>
+</body>
+
+</html>

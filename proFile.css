@@ -1,0 +1,56 @@
+section {
+  width: 900px;
+  padding: 10px;
+  margin: 10 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 320px;
+  padding: 10px;
+  margin: 30px auto;
+}
+
+.homeL {
+  width: 400px;
+  height: 300px;
+  padding: 0;
+}
+
+.homeR {
+  background-color: lightgray;
+}
+.homeR ul {
+  padding: 15px;
+}
+.homeR ul li {
+  margin: 3px 0;
+}
+
+.New {
+  background-color: white;
+}
+.New article {
+  transition-duration: 1s;
+  height: inherit;
+}
+.New article:hover {
+  transform: scale(110%);
+}
+
+.slide {
+  width: 1100px;
+  height: 400px;
+}
+
+.swiper {
+  width: 800px;
+  height: 400px;
+}
+
+.swiper-slide {
+  text-align: center;
+  background-color: white;
+  align-content: center;
+}/*# sourceMappingURL=proFile.css.map */

@@ -12,7 +12,13 @@ const checkSwiper = () => {
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-            }
+            },
+            centeredSlides: true,
+            slidesPerView: 2,
+            spaceBetween: 50,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            loopedSlides: 5
         });
     }
     else {

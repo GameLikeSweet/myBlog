@@ -10,9 +10,11 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--개인 js-->
     <script src="./Js/pageLoader.js"></script>
@@ -29,24 +31,49 @@
             </ul>
         </nav>
     </header>
-
-    <div class="profile">
-        <div class="myimg">
-            <img src="./resource/Me.jpg">
-            <p>
-            <h1>PSH</h1>성훈</p>
-        </div>
-        <div class="myprofile">
-            <ul>
-                <li><a href="https://github.com/GameLikeSweet" target="_blank">github</a></li>
-                <li>tjdgns9978@gmail.com</li>
-            </ul>
-        </div>
     </div>
     <div id="main">
+        <div class="topImgs">
+            <div class='topImg1' data-aos='fade-right'>
+                <div class="front">프로필</div>
+                <div class="back">
+                    <div class="myimg">
+                        <img src="./resource/Me.jpg">
+                        <p>
+                        <h1>PSH</h1>성훈</p>
+                    </div>
+                    <div class="myprofile">
+                        <ul>
+                            <li><a href="https://github.com/GameLikeSweet" target="_blank">github</a></li>
+                            <li>tjdgns9978@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="topImg2" data-aos='fade-left'>
+                <div class="front">테크 노트</div>
+                <div class="back">테크 노트 뒤</div>
+            </div>
+            <div class="topImg3" data-aos='fade-right'>
+                <div class="front">작업 페이지</div>
+                <div class="back">작업 페이지 뒤</div>
+            </div>
+        </div>
+        <div class="swiperBox" data-aos="fade-up">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src='./resource/homeSlide1.png'></div>
+                    <div class="swiper-slide"><img src='./resource/homeSlide2.png'></div>
+                    <div class="swiper-slide"><img src='./resource/homeSlide3.png'></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </div>
+    <script src="./Js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        loadPage('./Json/Home.json');
+        AOS.init();
     </script>
     <script src="./Js/gsap.js"></script>
 </body>
