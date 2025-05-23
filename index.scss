@@ -1,9 +1,10 @@
 .topImgs {
     width: 100%;
-    height: 1200px;
+    min-height: 1300px;
+    height: fit-content;
     margin: 0;
     padding: 0;
-    padding-top:100px;
+    padding-top: 100px;
     position: relative;
     background-image: url();
 
@@ -12,33 +13,43 @@
     .topImg1 {
         left: 50px;
 
-        div {
-            padding: 10px;
+        .profileImg {
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+
             img {
                 width: 150px;
                 height: 150px;
                 margin: 10px 0;
                 border-radius: 50%;
                 object-fit: cover;
+                margin: 0 auto;
             }
         }
 
-        ul {
-            list-style: none;
-            background-color: white;
-            width: 100%;
+        .profileList {
+            justify-content: start;
 
-            li {
-                margin: 2px;
-                word-break: break-all;
-                border-style: solid;
+            ul {
+                list-style: none;
+                background-color: white;
+                width: 100%;
+                padding: 0;
+                li {
+                    margin: 2px;
+                    word-break: break-all;
+                    border-style: solid;
 
-                a {
-                    text-decoration: none;
-                    color: black
+                    a {
+                        text-decoration: none;
+                        color: black
+                    }
                 }
             }
         }
+
     }
 
     .topImg2 {
@@ -63,14 +74,25 @@
         border-radius: 10px;
         padding: 10px;
         box-sizing: border-box;
-        .myProfile{
-            display:flex;
+        border: solid;
+
+        div {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .myProfile {
+            display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: center;
             align-content: center;
         }
-        .myProfile{
+
+        .myProfile {
             flex-direction: column;
         }
     }
@@ -130,32 +152,66 @@
     }
 }
 
-.news{
+.news {
     padding: 50px;
     width: 85%;
     margin-top: 100px;
-    position:relative;
+    position: relative;
     left: 20%;
     height: 550px;
     background-color: white;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    .newsBottom{
-        position:absolute;
+
+    .newsBottom {
+        position: absolute;
         top: 150px;
         width: 100%;
         height: 550px;
-        display:flex;
+        display: flex;
         flex-wrap: wrap;
         overflow: hidden;
-        .letter{
+
+        .letter {
             width: 300px;
             height: 100%;
-            margin-left:30px;
+            margin-left: 30px;
             border-radius: 15px;
-            padding:15px;
+            padding: 15px;
             box-sizing: border-box;
-            background-color:pink;
+            background-color: pink;
+        }
+    }
+}
+
+@media (max-width:800px) {
+    #main {
+        .topImgs {
+
+            .topImg1,
+            .topImg2,
+            .topImg3 {
+                width: 100% !important;
+                position: static;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .swiperBox {
+        height: 300px !important;
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide-prev,
+        .swiper-slide-next {
+            width: 10%;
+            height: 100%;
+            opacity: 0.3;
+            transform: scale(0.85) !important;
         }
     }
 }

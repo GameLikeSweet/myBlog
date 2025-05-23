@@ -12,11 +12,12 @@ body {
     line-height: 28px;
     margin: 0 auto;
     display: flex;
+    padding: 0 !important
 }
 
 /*헤더*/
 header {
-    width: 70vw;
+    width: 70%;
     height: 100px;
     margin: 0px auto;
     padding: 10px 30px;
@@ -69,8 +70,30 @@ header {
             }
         }
     }
+
+    .btn-primary,
+    .btn {
+        background-color: #E6ECF2;
+        border: none;
+        color: black;
+        position: fixed;
+        right: 40px;
+        top: 25%;
+        width: 50px;
+        height: 50px;
+    }
 }
 
+.offcanvasMain {
+    width: 250px;
+    height: 100%;
+    background-color: #E6ECF2;
+    padding-top: 150px;
+    padding-left: 50px;
+    margin:0;
+}
+
+$offcanvas-transition-duration: .3s;
 
 @mixin aside () {
     width: 250px;
@@ -182,8 +205,7 @@ nav {
 
 /*메인*/
 #main {
-    border-left-style: solid;
-    width: 70vw;
+    width: 70%;
     min-height: 1500px;
     height: fit-content;
     margin: 0px auto;
@@ -191,7 +213,7 @@ nav {
     background-color: #E6ECF2;
     top: 60px;
     box-sizing: border-box;
-    overflow:hidden
+    overflow: hidden
 }
 
 img {
@@ -206,25 +228,27 @@ a {
 
 
 #hamburger {
-  display: none;
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  background-color: #ff5722;
-  color: white;
-  padding: 10px 12px;
-  cursor: pointer;
-  z-index: 2000; /* header보다 확실히 위 */
-  border-radius: 4px;
-  font-size: 24px;
-  width: auto; /* 고정 크기 제거 */
-  height: auto;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 12px;
+    cursor: pointer;
+    z-index: 2000;
+    /* header보다 확실히 위 */
+    border-radius: 4px;
+    font-size: 24px;
+    width: auto;
+    /* 고정 크기 제거 */
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer{
-    margin-top:100px;
-    width:100%;
-    background-color:lightgray;
+footer {
+    margin-top: 300px;
+    width: 100%;
+    background-color: lightgray;
     height: 200px
 }
