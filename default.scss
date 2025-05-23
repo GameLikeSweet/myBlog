@@ -5,6 +5,7 @@
 }
 
 
+
 body {
     font-family: 'Verdana';
     font-size: 16px;
@@ -12,6 +13,7 @@ body {
     line-height: 28px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     padding: 0 !important
 }
 
@@ -88,9 +90,15 @@ header {
     width: 250px;
     height: 100%;
     background-color: #E6ECF2;
-    padding-top: 150px;
+    padding: 150px 0;
     padding-left: 50px;
-    margin:0;
+    margin: 0;
+    z-index: 1501;
+    a {
+    text-decoration: none;
+    color: black;
+}
+
 }
 
 $offcanvas-transition-duration: .3s;
@@ -213,7 +221,8 @@ nav {
     background-color: #E6ECF2;
     top: 60px;
     box-sizing: border-box;
-    overflow: hidden
+    overflow: hidden;
+    padding-bottom: 300px
 }
 
 img {
@@ -247,7 +256,6 @@ a {
 }
 
 footer {
-    margin-top: 300px;
     width: 100%;
     background-color: lightgray;
     height: 200px

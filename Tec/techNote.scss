@@ -1,0 +1,43 @@
+.techTop {
+    width: 100%;
+    padding: 30px auto;
+    height: 150px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    ul {
+        align-content: center;
+        display: flex;
+        width: 100%;
+        li {
+            display: flex;
+            margin-right: 50px;
+            height: 70px;
+            list-style: none;
+        }
+    }
+}
+
+
+
+
+.techBot {
+    width: 100%;
+    padding: 10px;
+
+
+    .web,
+    .git,
+    .lib {
+        width: auto;
+        height: 300px;
+        margin: 20px 30px;
+        background-color: white;
+        display: none;
+    }
+
+    .selected {
+        display: flex;
+    }
+}
