@@ -64,7 +64,6 @@
   transform-style: preserve-3d;
   transition: transform 1s !important;
   border-radius: 10px;
-  padding: 10px;
   box-sizing: border-box;
   border: solid;
 }
@@ -99,6 +98,9 @@
 .topImgs .front,
 .topImgs .back {
   backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .topImgs .front {
   font-size: 30px;
@@ -174,6 +176,7 @@
     width: 100% !important;
     position: static;
     margin-top: 10px;
+    padding: 0;
   }
   .swiperBox {
     height: 300px !important;

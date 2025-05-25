@@ -6,7 +6,7 @@
 
     <title>Myblog</title>
     <link rel="stylesheet" type="text/css" href="/default.css">
-    <link rel="stylesheet" type="text/css" href="/proFile.css">
+    <link rel="stylesheet" type="text/css" href="./webHome.css">
     <link rel="stylesheet" type="text/css" href="/mobile.css">
 
     <!--외부 라이브러리 CDN-->
@@ -41,7 +41,7 @@
             </a></div>
         <nav>
             <ul id="nav">
-                <script src="Js/nav.js"></script>
+                <script src="/Js/nav.js"></script>
             </ul>
         </nav>
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
@@ -52,7 +52,7 @@
 
     <div class="offcanvas offcanvasMain offcanvas-start" tabindex="-1" id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel" data-bs-scroll="true">
-        <div class="offcanvasTop">Home</div>
+        <div class="offcanvasTop"><a href="/index.html">Home</a></div>
         <div class="offcanvasBot">
             <ul class="navigaters">
                 <li class="offcanvasProfile">
@@ -87,16 +87,59 @@
     </div>
 
     <div id="main">
-        <div class="profileTop">
+        <section class="webTop">
+            <article class="aboutWebDevelopment">
+                <h1>Web개발이란?</h1>
+                <p>웹 개발은 웹사이트와 웹 애플리케이션을 구축하고 유지보수하는 과정을 말합니다. 크게 프론트엔드 개발, 백엔드 개발, 풀 스택 개발의 세 가지 영역으로 나눌 수 있습니다.</p>
+            </article>
+            <article class="aboutSkill">
+                <h1>웹 개발에 사용되는 주요 기술들</h1>
+                <div class='html'>
+                    <p>HTML (Hypertext Markup Language) : </p>
+                    <p>웹 브라우저에 표시되도록 설계된 문서의 표준 마크업 언어이다. HTML은 웹 콘텐츠 의 내용과 구조를 정의한다. </p>
+                </div>
+                <div class='css'>
+                    <p>CSS (Cascading Style Sheets) : </p>
+                    <p>HTML 이나 XML과 같은 마크업 언어로 작성된 문서의 표현과 스타일을 지정하는데 사용되는 스타일 시트 언어이다. </p>
+                </div>
+                <div class='js'>
+                    <p>JavaScript : </p>
+                    <p>동적으로 변경되는 콘텐츠를 만들고, 멀티미디어를 제어하고, 이미지에 애니메이션을 적용하는 등 거의 모든 작업을 수행할 수 있는 스크립팅 언어이다.</p>
+                </div>
+            </article>
+        </section>
+        <section class="webMid">
+            <article class="compareTop">
+                <div>
+                    <p>HTML, CSS , JS 적용 비교하기</p>
+                </div>
+            </article>
+            <article class="compareBot">
+                <div class="html">
+                    <h1>html</h1>
+                    <h2>h2</h2>
+                    <h3>h3</h3>
+                    <h4>h4</h4>
+                </div>
+                <div class="htmlcss">
+                    <h1 class='cssH1'>+ css</h1>
+                    <h2 class='cssH2'>h2</h2>
+                    <h3 class='cssH3'>h3</h3>
+                    <h4 class='cssH4'>h4</h4>
+                    </div>
+                    <div class="htmlcssjs">
+                        <h1 class='js1'>+ js</h1>
+                        <h2 class='js2'>h2</h2>
+                        <h3 class='js3'>h3</h3>
+                        <h4 class='js4'>h4</h4>
+                    </div>
+            </article>
 
-        </div>
-        <div class="profileBot">
-
-        </div>
+        </section>
     </div>
     <footer>
     </footer>
-    <script src="/Js/swiper.js"></script>
+    <script src="/Js/compareJS.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

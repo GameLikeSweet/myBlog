@@ -3,11 +3,6 @@ function navi(menu, url) {
     this.url = url;
 }
 
-let Web = new navi('Web', '/Web.html');
-let Alg = new navi("알고리즘", '/Algorithm.html');
-let Uni = new navi('Unity', '/Unity.html');
-let Git = new navi("Git", '/Git.html');
-let Lib = new navi('라이브러리', '/Library.html');
 let Tec = new navi('테크노트', '/Tec/techNote.html');
 let Pro = new navi('프로필', '/Profile.html');
 let Pagi = new navi('작업 페이지', '/Page.html');
@@ -26,3 +21,19 @@ for (let i = 0; i < menu_list.length; i++) {
     li.appendChild(a);
     nav.appendChild(li);
 }
+
+$.getJSON('/Json/techNoteList.json', function(data) {
+    $.each(data, function(key, items) {
+        // ul class 생성: 첫글자 대문자
+        const ulClass = ".off" + key.charAt(0).toUpperCase() + key.slice(1);
+        // 값이 있으면
+        $.each(items, function(idx, obj) {
+            if (obj.title && obj.url) {
+                const $li = $('<li>').append(
+                    $('<a>').attr('href', obj.url).text(obj.title)
+                );
+                $(ulClass).append($li);
+            }
+        });
+    });
+});

@@ -39,3 +39,20 @@ for (let i = 0; i < menu_list.length; i++) {
         }
     )
 }
+
+
+$.getJSON('/Json/techNoteList.json', function(data) {
+    $.each(data, function(key, items) {
+        // ul class 생성: 첫글자 대문자
+        const ulClass = ".off" + key.charAt(0).toUpperCase() + key.slice(1);
+        // 값이 있으면
+        $.each(items, function(idx, obj) {
+            if (obj.title && obj.url) {
+                const $li = $('<li>').append(
+                    $('<a>').attr('href', obj.url).text(obj.title)
+                );
+                $(ulClass).append($li);
+            }
+        });
+    });
+});

@@ -61,10 +61,18 @@
                 <li class="offcanvasTec">
                     <div><a href="/Tec/techNote.html">테크 노트</a></div>
                     <ul>
-                        <li>Web</li>
-                        <li>Git</li>
-                        <li>라이브러리</li>
+                        <li>
+                            Web
+                            <ul class='offWeb'></ul>
+                        </li>
+                        <li>Git
+                            <ul class='offGit'></ul>
+                        </li>
+                        <li>라이브러리
+                            <ul class="offLib"></ul>
+                        </li>
                     </ul>
+                </li>
                 </li>
                 <li class="offcanvasWorks">
                     <div>작업 페이지</div>
@@ -81,9 +89,12 @@
     <div id="main">
         <div class="techTop">
             <ul>
-                <li><button type="button" class="btn btn-primary" data-bs-toggle="button" onclick=toggleWeb()>Web</button></li>
-                <li><button type="button" class="btn btn-primary" data-bs-toggle="button" onclick=toggleGit()>Git</button></li>
-                <li><button type="button" class="btn btn-primary" data-bs-toggle="button" onclick=toggleLib()>라이브러리</button></li>
+                <li><button type="button" class="btn btn-primary" data-bs-toggle="button"
+                        onclick=toggleWeb()>Web</button></li>
+                <li><button type="button" class="btn btn-primary" data-bs-toggle="button"
+                        onclick=toggleGit()>Git</button></li>
+                <li><button type="button" class="btn btn-primary" data-bs-toggle="button"
+                        onclick=toggleLib()>라이브러리</button></li>
             </ul>
         </div>
         <div class="techBot">
@@ -99,7 +110,6 @@
     <script>
         AOS.init();
     </script>
-    <script src="/Js/gsap.js"></script>
 </body>
 
 </html>
