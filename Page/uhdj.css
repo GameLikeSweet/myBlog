@@ -118,6 +118,9 @@ footer {
 .menuList .menu .menuBot {
   padding: 5px;
 }
+.menuList .menu .menuBot .disable {
+  display: none;
+}
 .menuList .menu .menuPrice {
   bottom: 0;
   left: 0;
