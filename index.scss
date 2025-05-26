@@ -1,3 +1,8 @@
+body{
+    overflow: hidden;
+    
+}
+
 .topImgs {
     width: 100%;
     min-height: 1300px;
@@ -37,6 +42,7 @@
                 background-color: white;
                 width: 100%;
                 padding: 0;
+
                 li {
                     margin: 2px;
                     word-break: break-all;
@@ -106,8 +112,8 @@
     .back {
         backface-visibility: hidden;
         position: absolute;
-        width:100%;
-        height:100%;
+        width: 100%;
+        height: 100%;
     }
 
     .front {
@@ -146,11 +152,23 @@
         height: 100%;
         opacity: 0.3;
         transform: scale(0.85) !important;
+
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
     }
 
     .swiper-slide-active {
         width: 100%;
         height: 100%;
+
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
@@ -182,24 +200,49 @@
             padding: 15px;
             box-sizing: border-box;
             background-color: #95C5D4;
+            color: black;
+            text-decoration: underline;
+
+            .thumbnail {
+                background-color: white;
+                height: 50%;
+            }
         }
     }
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    align-content: center;
 }
 
 @media (max-width:800px) {
 
     #main {
         .topImgs {
-
+            align-content: start;
+            height: calc(100vh - 100px);
             .topImg1,
             .topImg2,
             .topImg3 {
                 width: 100% !important;
+                height: 25vh;
+                box-sizing: border-box;
                 position: static;
                 margin-top: 10px;
-                padding:0;
+                padding: 0;
+                .back{
+                    width : 100%;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                }
             }
         }
+
     }
 
     .swiperBox {
@@ -218,4 +261,5 @@
             transform: scale(0.85) !important;
         }
     }
+
 }

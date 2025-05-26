@@ -12,6 +12,21 @@
   }
 
 
+  section{
+    padding: 0;
+  }
+  article{
+    width:100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
   nav {
     width: 800px;
     margin: auto 0;

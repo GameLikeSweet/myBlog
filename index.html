@@ -51,7 +51,7 @@
     </header>
 
     <div class="offcanvas offcanvasMain offcanvas-start" tabindex="-1" id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel" data-bs-scroll="true" >
+        aria-labelledby="offcanvasExampleLabel" data-bs-scroll="true">
         <div class="offcanvasTop"><a href="/index.html">Home</a></div>
         <div class="offcanvasBot">
             <ul class="navigaters">
@@ -75,7 +75,7 @@
                 </li>
                 <li class="offcanvasWorks">
                     <div>작업 페이지</div>
-                    <ul>
+                    <ul class="offPage">
                         <li>페이지 1</li>
                         <li>페이지 2</li>
                         <li>페이지 3</li>
@@ -86,7 +86,7 @@
     </div>
 
     <div id="main">
-        <div class="topImgs">
+        <section class="topImgs">
             <div class='topImg1' data-aos='fade-right' data-aos-delay="1500">
                 <div class="front">프로필</div>
                 <div class="back myProfile">
@@ -105,49 +105,79 @@
             </div>
             <div class="topImg2" data-aos='fade-left' data-aos-delay="1500">
                 <div class="front">테크 노트</div>
-                <div class="back"><p>테크노트는 웹 사이트나 웹 애플리케이션을 개발하고 운영하는 데 사용되는 기술적인 지식과 정보, 노하우를 담고 있는 것을 말합니다.
-                    주로 Web 프로젝트 작업 과정, git 및 github를 이용한 작엄물 관리, 작업한 웹 페이지에 사용된 외부 라이브러리에 대한 정리를 하는 곳입니다.</p>
+                <div class="back">
+                    <p>테크노트는 웹 사이트나 웹 애플리케이션을 개발하고 운영하는 데 사용되는 기술적인 지식과 정보, 노하우를 담고 있는 것을 말합니다.
+                        주로 Web 프로젝트 작업 과정, git 및 github를 이용한 작엄물 관리, 작업한 웹 페이지에 사용된 외부 라이브러리에 대한 정리를 하는 곳입니다.</p>
                 </div>
             </div>
             <div class="topImg3" data-aos='fade-right' data-aos-delay="1500">
                 <div class="front">작업 페이지</div>
-                <div class="back"><p>개인적인 학습을 위해 만든 페이지나 다른 사이트를 모작한 페이지를 올리는 곳입니다.</p></div>
-            </div>
-        </div>
-        <div class="swiperBox" data-aos="fade-up">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src='/resource/homeSlide1.png'></div>
-                    <div class="swiper-slide"><img src='/resource/homeSlide2.png'></div>
-                    <div class="swiper-slide"><img src='/resource/homeSlide3.png'></div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-        <div class="news" data-aos="slide-left" data-aos-duration="1500">
-            <div class="newsTop">
-                <h2>New</h2>
-            </div>
-            <div class="newsBottom">
-                <div class="letter">
-                    <h2>최신 기사 1</h2>
-                </div>
-                <div class="letter">
-                    <h2>최신 기사 2</h2>
-                </div>
-                <div class="letter">
-                    <h2>최신 기사 3</h2>
-                </div>
-                <div class="letter">
-                    <h2>최신 기사 4</h2>
+                <div class="back">
+                    <p>개인적인 학습을 위해 만든 페이지나 다른 사이트를 모작한 페이지를 올리는 곳입니다.</p>
                 </div>
             </div>
-        </div>
+        </section>
+        <section>
+            <div class="swiperBox" data-aos="fade-up">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src='/resource/homeSlide1.png'></div>
+                        <div class="swiper-slide"><img src='/resource/homeSlide2.png'></div>
+                        <div class="swiper-slide"><img src='/resource/homeSlide3.png'></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="news" data-aos="slide-left" data-aos-duration="1500">
+                <div class="newsTop">
+                    <h2>New</h2>
+                </div>
+                <div class="newsBottom">
+                    <a href='/Tec/Git/gitStart.html'>
+                        <div class="letter">
+                            <h2>Git Start</h2>
+                            <div class="thumbnail">
+                                <img src="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href='/Tec/Git/gitStart.html'>
+                        <div class="letter">
+                            <h2>Web Home</h2>
+                            <div class="thumbnail">
+                                <img src="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href='/Tec/Git/gitStart.html'>
+                        <div class="letter">
+                            <h2>최신 뉴스 3</h2>
+                            <div class="thumbnail">
+                                <img src="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href='/Tec/Git/gitStart.html'>
+                        <div class="letter">
+                            <h2>최신 뉴스 4</h2>
+                            <div class="thumbnail">
+                                <img src="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </div>
     <footer>
     </footer>
     <script src="/Js/swiper.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/Js/sectionMove.js"></script>
     <script>
         AOS.init();
     </script>

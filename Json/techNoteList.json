@@ -1,12 +1,15 @@
 {
     "web": {
         "0" : {
-            "title" : "WEB HOME",
+            "title" : "Web Home",
             "url" : "/Tec/Web/webHome.html"
         }
     },
     "git": {
-
+        "0" : {
+            "title" : "Git Home",
+            "url" : "/Tec/Git/gitStart.html"
+        }
     },
     "lib" : {
         

@@ -1,0 +1,182 @@
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="/resource//Git.png">
+
+    <title>Myblog</title>
+    <link rel="stylesheet" type="text/css" href="/default.css">
+    <link rel="stylesheet" type="text/css" href="./gitStart.css">
+    <link rel="stylesheet" type="text/css" href="/mobile.css">
+
+    <!--외부 라이브러리 CDN-->
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <!--개인 js-->
+    <script src="/Js/pageLoader.js"></script>
+</head>
+
+<body>
+    <header>
+        <div><a href="/index.html"><img src="/resource/logo.png">
+                <p>My Blog</p>
+            </a></div>
+        <nav>
+            <ul id="nav">
+                <script src="/Js/nav.js"></script>
+            </ul>
+        </nav>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            ☰
+        </button>
+    </header>
+
+    <div class="offcanvas offcanvasMain offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel" data-bs-scroll="true">
+        <div class="offcanvasTop"><a href="/index.html">Home</a></div>
+        <div class="offcanvasBot">
+            <ul class="navigaters">
+                <li class="offcanvasProfile">
+                    <div><a href="/Profile.html">프로필</a></div>
+                </li>
+                <li class="offcanvasTec">
+                    <div><a href="/Tec/techNote.html">테크 노트</a></div>
+                    <ul>
+                        <li>
+                            Web
+                            <ul class='offWeb'></ul>
+                        </li>
+                        <li>Git
+                            <ul class='offGit'></ul>
+                        </li>
+                        <li>라이브러리
+                            <ul class="offLib"></ul>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li class="offcanvasWorks">
+                    <div>작업 페이지</div>
+                    <ul class="offPage">
+                        <li>페이지 1</li>
+                        <li>페이지 2</li>
+                        <li>페이지 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <section class="gitTop">
+            <article class="aboutGit">
+                <h1>Git 이란?</h1>
+                <img src="/resource//Git.png">
+                <p>
+                <h1>Git</h1>
+                <div class='gitLink'><a href='https://git-scm.com/' target=_blank> -> git 공식 주소 사이트</a> </p>
+                </div>
+                <p>Git은 무료 오픈 소스 버전 컨트롤 시스템으로 빠르고 효율적으로 작은 프로젝트부터 대규모 프로젝트까지 모두 처리하도록 설계되어있다.</p>
+            </article>
+        </section>
+        <section class="sttingGit">
+            <article class="donwloadGit">
+                <div>
+                    <h2>Git 설치</h2>
+                    <img src='/resource/gitDonwload.png'>
+                    <p><br>github의 공식 홈페이지에서 쉽게 다운로드 할 수 있으며 setup 파일을 통해 간단하게 설치할 수 있다.</p>
+                </div>
+            </article>
+            <article class="stting">
+                <h1>Git Config</h1><img src='/resource/gitConfig.png'>
+                <div>
+                    <p>git을 통해서 작업을 커밋(변경 작업들을 저장소에 기록하는 동작)할 시 git은 사용자 정보를 사용한다. 따라서 git설치 후 우선 해야 할 것은 사용자 정보를
+                        입력하는것이다.
+                </div>
+                <div class='gitCommand'>git config --global user.name 'tester'<br>git config --global user.email
+                    'tester@test.com'</div>
+                <p>이렇게 설정하면 git을 이용해서 커밋할 때마다 항상 이 정보를 사용하다. 만약 프로젝트마다 따로 관리하고 싶으면 --global을 제거하면 된다.</p>
+            </article>
+            <article class="gitRemote">
+                <h2>Git remote</h2>
+                <p>
+                    remote 저장소란 인터넷이나 네트워크 어딘가에 있는 저장소를 말한다.이 리모트 저장소를 관리할 줄 알아야 다른 사람과 함께 협업할 수 있다. <br>리모트 저장소는 관리하면서
+                    데이터를 거기에 push 하거나 pull 할 수 있다.
+                </p>
+                <div class='gitCommand'>git remote<br>git remote add '이름' '저장소 url'</div>
+                <p> git remote 명령을 통해서 remote 저장소를 확인하고 git remote add 명령을 통해서 저장소를 추가 할 수 있다.</p>
+            </article>
+        </section>
+        <section class="gitStart">
+            <article class="gitInit1">
+                <div>
+                    <h1>Git Init</h1>
+                    <p>git을 시작하려면 git 저장소가 필요하다. 주로 다음 두 가지 중 한 가지 방법으로 Git 저장소를 쓰기 시작한다.</p>
+                    <ol class='gitCommand'>
+                        <li>아직 버전관리를 하지 않는 로컬 디렉토리 하나를 선택해서 Git 저장소를 적용하는 방법</li>
+                        <li>다른 어딘가에서 Git 저장소를 Clone 하는 방법</li>
+                    </ol>
+                </div>
+            </article>
+            <article class="gitInit2">
+                <h1>기존 디렉토리를 Git 저장소로 만들기</h1>
+                <div>
+                    <p>Git을 사용하여 버전관리를 하지 안는 기존 프로젝트를 Git으로 관리하고 싶은경우 우선 해당 프로젝트의 디렉토리로 이동한다</p>
+                    <div class='gitCommand'>
+                        <p>Linux : cd /home/user/new_project<br>Windows : cd /c/user/my_project</p>
+                    </div>
+                    <p> 그리고 아래와 같은 명령을 실행한다. </p>
+                    <div class='gitCommand'>git init </div>
+                    <p>이 명령은 .git이라는 하위 디렉토리를 만들고 .git 디렉토리에는 저장소에 필요한 파일이 들어간다이 때 아직 프로젝트의 어떤 파일도 관리하지 않는다.</p>
+                </div>
+            </article>
+            <article class="gitAdd">
+                <h1>Git add</h1>
+                <p>Git이 파일을 관리하게 하려면 저장소에 파일을 추가하고 커밋해야 한다. git add 명령으로 파일을 추가할 수 있다.</p>
+                <div class='gitCommand'>
+                    <p>git add .<br> git add '파일명'</p>
+                </div>
+                <p>
+                    git add . 명령으로 폴더 내부의 전체 파일을 추가 할 수 있고, git add '파일명'을 통해서 개별 파일을 git에 추가할 수 있다.<br>git staus 명령을
+                    통해서
+                    현제 파일의 상태를 확인 할 수 있다.
+                </p>
+            </article>
+            <article class="gitCommit">
+                <h1>Git commit</h1>
+                <p>현재 작업하고 있는 폴더 및 파일들의 상태를 저장할 수 있다. 이 때 저장한 커밋들을 이용해서 작업물의 상태를 해당 시점으로 되돌릴 수 있다.</p>
+                <div class='gitCommand'>
+                    <p>git commit<br>또는<br>git commit -m '설명' // -m로 커밋 메시지 작성</p>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
