@@ -1,0 +1,15 @@
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.testBox {
+  padding: 10px 0;
+  background-color: white;
+}
+.testBox .testP {
+  background-color: lightblue;
+}
+.testBox .testSpan {
+  background-color: lightcoral;
+}/*# sourceMappingURL=web101.css.map */

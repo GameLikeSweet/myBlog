@@ -136,7 +136,7 @@ body {
   width: 50%;
   height: 100%;
   opacity: 0.3;
-  transform: scale(0.85) !important;
+  transform: scale(0.85);
 }
 .swiperBox .swiper-slide-prev img,
 .swiperBox .swiper-slide-next img {
@@ -161,7 +161,7 @@ body {
   width: 85%;
   margin-top: 100px;
   position: relative;
-  left: 20%;
+  left: 10%;
   height: 550px;
   background-color: white;
   border-top-left-radius: 20px;
@@ -224,17 +224,41 @@ section {
     overflow: hidden;
   }
   .swiperBox {
-    height: 300px !important;
+    height: 90vh;
+    width: 100%;
+    box-sizing: border-box;
   }
   .swiperBox .swiper {
     width: 100%;
     height: 100%;
   }
+  .swiperBox .swiper img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .swiperBox .swiper-slide-active {
+    width: 100%;
+    height: 100%;
+  }
+  .swiperBox .swiper-slide-active img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
   .swiperBox .swiper-slide-prev,
   .swiperBox .swiper-slide-next {
-    width: 10%;
+    width: 20%;
     height: 100%;
     opacity: 0.3;
-    transform: scale(0.85) !important;
+  }
+  .swiperBox .swiper-slide-prev img,
+  .swiperBox .swiper-slide-next img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+    height: 100%;
   }
 }/*# sourceMappingURL=index.css.map */

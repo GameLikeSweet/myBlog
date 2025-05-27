@@ -6,7 +6,7 @@
 
     <title>Myblog</title>
     <link rel="stylesheet" type="text/css" href="/default.css">
-    <link rel="stylesheet" type="text/css" href="./webHome.css">
+    <link rel="stylesheet" type="text/css" href="./web101.css">
     <link rel="stylesheet" type="text/css" href="/mobile.css">
 
     <!--외부 라이브러리 CDN-->
@@ -87,54 +87,70 @@
     </div>
 
     <div id="main">
-        <section class="webTop">
-            <article class="aboutWebDevelopment">
-                <h1>Web개발이란?</h1>
-                <p>웹 개발은 웹사이트와 웹 애플리케이션을 구축하고 유지보수하는 과정을 말합니다. 크게 프론트엔드 개발, 백엔드 개발, 풀 스택 개발의 세 가지 영역으로 나눌 수 있습니다.</p>
+        <section class="web101Top">
+            <article class="wob101">
+                <img src="/resource/web101/index.png">
+                <p>
+                <h1>Web 101</h1>
+                </p>
             </article>
-            <article class="aboutSkill">
-                <h1>웹 개발에 사용되는 주요 기술들</h1>
-                <div class='html'>
-                    <p>HTML (Hypertext Markup Language) : </p>
-                    <p>웹 브라우저에 표시되도록 설계된 문서의 표준 마크업 언어이다. HTML은 웹 콘텐츠 의 내용과 구조를 정의한다. </p>
+            <article class="githubLink">
+                <div class='web101Link'>
+                    <a href='https://github.com/GameLikeSweet/web101' target=_blank>
+                        -> github 리포지토리 바로가기</a>
+                    </p>
                 </div>
-                <div class='css'>
-                    <p>CSS (Cascading Style Sheets) : </p>
-                    <p>HTML 이나 XML과 같은 마크업 언어로 작성된 문서의 표현과 스타일을 지정하는데 사용되는 스타일 시트 언어이다. </p>
+                <p>
+                    기본적인 HTML의 엘리먼트를 알아보고 사용해보는것을 목적으로 작성한다.<br>
+                    body 내부에 h1, div, a 등의 자주 사용하는 여러 엘리먼트를 사용해보고 페이지 이동을 구현한다.
+                </p>
+
+            </article>
+        </section>
+        <section class="web101Mid">
+            <article class="headNBody">
+                <div>
+                    <h2>Head</h2>
+                    <p>헤드는 페이지에 표시되지는 않지만 대신에 페이지에 대한 메타데이터(meatdata)를 포함하고있다.</p>
+                    <h2>Body</h2>
+                    <p>body엘리먼트는 HTML의 문서의 내용을 표현한다. 한 문서에는 하나의 body엘리먼트만 존재할 수 있다. </p>
                 </div>
-                <div class='js'>
-                    <p>JavaScript : </p>
-                    <p>동적으로 변경되는 콘텐츠를 만들고, 멀티미디어를 제어하고, 이미지에 애니메이션을 적용하는 등 거의 모든 작업을 수행할 수 있는 스크립팅 언어이다.</p>
+            </article>
+            <article class="elements">
+                <div>
+                    <h2>div</h2>
+                    <p> div엘리먼트는 컨텐츠를 담는 순수한 컨테이너로 CSS를 통해 직접 스타일을 적용하거나 부모 엘리먼트의 영항 없이 해당 엘리먼트 자체는 콘텐츠나 레이아웃에
+                        아무런 영향을 주지 않는다.
+                    </p>
+                    <h2>P and Span</h2>
+                    <p>p는 문단을 나타네는 엘리먼트이다. 기본적으로 위 아래에 약간의 여백을 가지고 있으며 블록 타입이기 때문에 CSS를 통한 스타일 적용이 없으면앞뒤로 자동 줄바꿈
+                        처리를 한다
+                        span은 div와 유사하게 엘리먼트 자체는 아무런 영향을 주지 않지만 인라인 타입이기 때문에 줄바꿈 없이 작동된다. 인라인 타입끼리 있을시 수직이 아닌
+                        수평으로 배치된다
+                    </p>
+                    <div class="testBox">
+                        <p class="testP">This is test P 1</p>
+                        <p class="testP">This is test P 2</p>
+                        <span class="testSpan">This is test Span 1</span>
+                        <span class="testSpan">This is test Span 2</span>
+                    </div>
+                </div>
+            </article>
+            <article class="a">
+                <div>
+                    <h2>A</h2>
+                    <p>a엘리먼트는 href 특성을 통해 다른 페이지나 같은 페이지의 다른 URL로 연결할 수 있는 하이퍼링크를 만드는 역할을 한다.</p>
+                    <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Reference/Elements/a" target="_blank">hyper Link</a>
                 </div>
             </article>
         </section>
-        <section class="webMid">
-            <article class="compareTop">
-                <div>
-                    <p>HTML, CSS , JS 적용 비교하기</p>
-                </div>
+        <section class="web101Bot">
+            <article class="web101Img">
+                <img src='/resource/web101/html.png'>
             </article>
-            <article class="compareBot">
-                <div class="html">
-                    <h1>html</h1>
-                    <h2>h2</h2>
-                    <h3>h3</h3>
-                    <h4>h4</h4>
-                </div>
-                <div class="htmlcss">
-                    <h1 class='cssH1'>+ css</h1>
-                    <h2 class='cssH2'>h2</h2>
-                    <h3 class='cssH3'>h3</h3>
-                    <h4 class='cssH4'>h4</h4>
-                </div>
-                <div class="htmlcssjs">
-                    <h1 class='js1'>+ js</h1>
-                    <h2 class='js2'>h2</h2>
-                    <h3 class='js3'>h3</h3>
-                    <h4 class='js4'>h4</h4>
-                </div>
+            <article class="botAbout">
+                <p>HTML 초기 코드와 기초적인 엘리먼트를 사용하였고 style은 기본적인 크기나 href 및 src 정도만 사용하였다. 모든 엘리먼트들이 기본 설정 그대로 나오고 있으며 크기는 내용물의 크기 그대로 나오고 줄 바꿈 또한 컨트롤 할 수 없다.</p>
             </article>
-
         </section>
     </div>
     <footer>

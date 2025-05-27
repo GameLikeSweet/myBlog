@@ -9,20 +9,27 @@ const checkSwiper = () => {
                 delay: 4000,
             },
             speed: 400,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
             centeredSlides: true,
             slidesPerView: 2,
-            spaceBetween: 50,
+            spaceBetween: 30,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
-            loopedSlides: 5
+            loopedSlides: 5,
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 8,
+                },
+                801: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                }
+            }
         });
     }
     else {
-        setTimeout(checkSwiper, 3000); // retry until loaded
+        setTimeout(checkSwiper, 3000); 
     }
 };
 

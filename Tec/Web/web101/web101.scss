@@ -1,0 +1,16 @@
+img{
+    object-fit: contain;
+}
+
+
+.testBox{
+
+    padding: 10px 0;
+    background-color: white;
+    .testP{
+        background-color: lightblue;
+    }
+    .testSpan{
+        background-color: lightcoral;
+    }
+}

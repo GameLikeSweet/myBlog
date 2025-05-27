@@ -1,62 +1,70 @@
-#main section {
-  margin: 0 auto;
-  width: 80%;
-}
-
 .webMid {
-  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-content: center;
 }
 .webMid .compareTop {
   text-align: center;
   font-size: 20px;
 }
-.webMid article.compareBot {
+.webMid .compareBot {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
-.webMid article.compareBot * {
+.webMid .compareBot * {
   margin: auto;
-  width: 300px;
-  height: 100%;
 }
-.webMid article.compareBot .cssH1,
-.webMid article.compareBot .cssH2,
-.webMid article.compareBot .cssH3,
-.webMid article.compareBot .cssH4 {
+.webMid .compareBot .cssH1,
+.webMid .compareBot .cssH2,
+.webMid .compareBot .cssH3,
+.webMid .compareBot .cssH4 {
   border: solid;
   margin: 5px 0;
   height: 40px;
 }
-.webMid article.compareBot .cssH1 {
+.webMid .compareBot .cssH1 {
   width: 200px;
   background-color: red;
 }
-.webMid article.compareBot .cssH2 {
+.webMid .compareBot .cssH2 {
   width: 175px;
   background-color: orange;
 }
-.webMid article.compareBot .cssH3 {
+.webMid .compareBot .cssH3 {
   width: 150px;
   background-color: yellow;
 }
-.webMid article.compareBot .cssH4 {
+.webMid .compareBot .cssH4 {
   width: 125px;
   background-color: green;
 }
-.webMid article.compareBot h1 {
+.webMid .compareBot h1 {
   font-size: 2em;
 }
-.webMid article.compareBot .js1,
-.webMid article.compareBot .js2,
-.webMid article.compareBot .js3,
-.webMid article.compareBot .js4 {
+.webMid .compareBot .js1,
+.webMid .compareBot .js2,
+.webMid .compareBot .js3,
+.webMid .compareBot .js4 {
   border: solid;
   margin: 5px 0;
   height: 40px;
   width: 150px;
   transition-property: background-color;
   transition-duration: 1s;
+}
+
+@media (max-width: 800px) {
+  section {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  section article {
+    width: 100%;
+    padding: 10px 5px;
+    box-sizing: border-box;
+  }
+  section .compareBot div {
+    width: 70%;
+    margin: 15px auto !important;
+  }
 }/*# sourceMappingURL=webHome.css.map */

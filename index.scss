@@ -1,6 +1,6 @@
-body{
+body {
     overflow: hidden;
-    
+
 }
 
 .topImgs {
@@ -151,7 +151,7 @@ body{
         width: 50%;
         height: 100%;
         opacity: 0.3;
-        transform: scale(0.85) !important;
+        transform: scale(0.85);
 
         img {
             object-fit: contain;
@@ -177,7 +177,7 @@ body{
     width: 85%;
     margin-top: 100px;
     position: relative;
-    left: 20%;
+    left: 10%;
     height: 550px;
     background-color: white;
     border-top-left-radius: 20px;
@@ -216,7 +216,7 @@ section {
     height: 100vh;
     margin: 0;
     padding: 0;
-    display:flex;
+    display: flex;
     align-content: center;
 }
 
@@ -226,6 +226,7 @@ section {
         .topImgs {
             align-content: start;
             height: calc(100vh - 100px);
+
             .topImg1,
             .topImg2,
             .topImg3 {
@@ -235,8 +236,9 @@ section {
                 position: static;
                 margin-top: 10px;
                 padding: 0;
-                .back{
-                    width : 100%;
+
+                .back {
+                    width: 100%;
                     box-sizing: border-box;
                     overflow: hidden;
                 }
@@ -246,19 +248,44 @@ section {
     }
 
     .swiperBox {
-        height: 300px !important;
+
+        height: 90vh;
+        width: 100%;
+        box-sizing: border-box;
 
         .swiper {
             width: 100%;
             height: 100%;
+
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .swiper-slide-active {
+            width: 100%;
+            height: 100%;
+
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
         }
 
         .swiper-slide-prev,
         .swiper-slide-next {
-            width: 10%;
+            width: 20%;
             height: 100%;
             opacity: 0.3;
-            transform: scale(0.85) !important;
+
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 

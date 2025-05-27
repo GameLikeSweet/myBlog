@@ -3,12 +3,24 @@
         "0" : {
             "title" : "Web Home",
             "url" : "/Tec/Web/webHome.html"
+        },
+        "2" : {
+            "title" : "web 101",
+            "url" : "/Tec/Web/web101/web101.html"
+        },
+        "3" : {
+            "title" : "web 102",
+            "url" : "/Tec/Web/web102/web102.html"
         }
     },
     "git": {
-        "0" : {
+        "1" : {
             "title" : "Git Home",
             "url" : "/Tec/Git/gitStart.html"
+        },
+        "4" : {
+            "title" : "GitHub",
+            "url" : "/Tec/Git/gitHub.html"
         }
     },
     "lib" : {

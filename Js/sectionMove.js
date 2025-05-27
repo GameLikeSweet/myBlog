@@ -3,6 +3,7 @@ $(function () {
     let index = 0;
     let isMoving = false;
 
+    moveToSection();
     // PC: 휠 이벤트
     $(window).on('wheel', function (w) {
         if (isMoving) return;
