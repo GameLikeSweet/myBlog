@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="/resource//Git.png">
+
+    <title>Myblog</title>
+    <link rel="stylesheet" type="text/css" href="/default.css">
+    <link rel="stylesheet" type="text/css" href="./gitStart.css">
+    <link rel="stylesheet" type="text/css" href="/mobile.css">
+
+    <!--외부 라이브러리 CDN-->
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <!--개인 js-->
+    <script src="/Js/pageLoader.js"></script>
+</head>
+
+<body>
+    <header>
+        <div><a href="/index.html"><img src="/resource/logo.png">
+                <p>My Blog</p>
+            </a></div>
+        <nav>
+            <ul id="nav">
+                <script src="/Js/nav.js"></script>
+            </ul>
+        </nav>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            ☰
+        </button>
+    </header>
+
+    <div class="offcanvas offcanvasMain offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel" data-bs-scroll="true">
+        <div class="offcanvasTop"><a href="/index.html">Home</a></div>
+        <div class="offcanvasBot">
+            <ul class="navigaters">
+                <li class="offcanvasProfile">
+                    <div><a href="/Profile.html">프로필</a></div>
+                </li>
+                <li class="offcanvasTec">
+                    <div><a href="/Tec/techNote.html">테크 노트</a></div>
+                    <ul>
+                        <li>
+                            Web
+                            <ul class='offWeb'></ul>
+                        </li>
+                        <li>Git
+                            <ul class='offGit'></ul>
+                        </li>
+                        <li>라이브러리
+                            <ul class="offLib"></ul>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li class="offcanvasWorks">
+                    <div>작업 페이지</div>
+                    <ul class="offPage">
+                        <li>페이지 1</li>
+                        <li>페이지 2</li>
+                        <li>페이지 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <section class="gitHubTop">
+            <article class="aboutGithub">
+                <img src='/resource/gitHub.png'>
+                <h1><a href='https://github.com/' target='-blank'>&rarr; github 바로가기</a></h1>
+                <h2>GitHub 란?</h2>
+                <p>GitHub는 코드를 저장하고 공유하고 다른 사람과 함께 코드를 작성할 수 있는 클라우드 기반 플랫폼이다.</p>
+                <p>GitHub의 기본적인 기능 중 하나인 공동 작업은 GitHub가 빌드된 오픈 소스 소프트웨어인 Git으로 지원된다.</p>
+            </article>
+            <article class="gitNGitHub">
+                <h2>Git 과 GitHub</h2>
+                <p>GitHub에 파일을 업로드하면 파일을 “Git 리포지토리”에 저장합니다. 즉, GitHub에서 파일을 변경하거나 “커밋”하면 Git에서 변경 내용을 자동으로 추적하고 관리하기
+                    시작한다.</p>
+            </article>
+        </section>
+
+        <br>
+
+        <section class="gitHubMid">
+            <article class="Git cleon">
+                <h2>Git clone</h2>
+                <p>git clone이란 다른 프로젝트에 참여하려거나(Contribute) Git 저장소를 복사하고 싶을 때 git clone 명령을 사용한다.</p>
+                <p>git clone을 통해 프로젝트를 복사하면 프로젝트 히스토리를 전부 받아온다.</p>
+                <div class='gitCommand'>git clone https://github.com/GameLikeSweet/myBlog</div>
+                <p>해당 명령을 실행하면 새 디렉토리를 만들고 그 안에 url에 있는 remote 저장소의 데이터를 가져와 가장 최신 버전으로 세팅한다.</p>
+            </article>
+            <article class="gitPush">
+                <h2>Git push</h2>
+                <p>git push는 git에 설정한 remote 저장소에 현제 git으로 관리하고 있는 데이터를 보내는 명령이다.</p>
+                <div class='gitCommand'>git push origin main</div>
+                <p>해당 명령어를 통해서 git에 origin이라 이름으로 저장된 remote 저장소에 main 브런치에 현제 작업 데이터를 보낼 수 있다.</p>
+            </article>
+        </section>
+    </div>
+    <footer>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

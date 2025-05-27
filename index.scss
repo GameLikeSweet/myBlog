@@ -237,10 +237,29 @@ section {
                 margin-top: 10px;
                 padding: 0;
 
+
+                .profileImg {
+                    img {
+                        height: 100%;
+                        width: auto;
+                        object-fit: contain;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    h1{
+                        font-size:3vh;
+                    }
+                    height:100%;
+                    box-sizing: border-box;
+                }
+
                 .back {
                     width: 100%;
                     box-sizing: border-box;
                     overflow: hidden;
+                }
+                .profileList{
+                    box-sizing: border-box;
                 }
             }
         }

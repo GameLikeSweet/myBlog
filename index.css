@@ -216,12 +216,38 @@ section {
     margin-top: 10px;
     padding: 0;
   }
+  #main .topImgs .topImg1 .profileImg,
+  #main .topImgs .topImg2 .profileImg,
+  #main .topImgs .topImg3 .profileImg {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  #main .topImgs .topImg1 .profileImg img,
+  #main .topImgs .topImg2 .profileImg img,
+  #main .topImgs .topImg3 .profileImg img {
+    height: 100%;
+    width: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  #main .topImgs .topImg1 .profileImg h1,
+  #main .topImgs .topImg2 .profileImg h1,
+  #main .topImgs .topImg3 .profileImg h1 {
+    font-size: 3vh;
+  }
   #main .topImgs .topImg1 .back,
   #main .topImgs .topImg2 .back,
   #main .topImgs .topImg3 .back {
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
+  }
+  #main .topImgs .topImg1 .profileList,
+  #main .topImgs .topImg2 .profileList,
+  #main .topImgs .topImg3 .profileList {
+    box-sizing: border-box;
   }
   .swiperBox {
     height: 90vh;
