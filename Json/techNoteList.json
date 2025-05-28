@@ -1,4 +1,6 @@
 {
+    "techTotal" : "5",
+
     "web": {
         "0": {
             "title": "Web Home",

@@ -47,6 +47,9 @@ $.getJSON('/Json/techNoteList.json', function (data) {
         const ulClass = ".off" + key.charAt(0).toUpperCase() + key.slice(1);
 
         // page 아닌 경우
+
+        if(key === 'techTotal') return;
+
         if (key !== 'page') {
             $.each(items, function (idx, obj) {
                 if (obj.title && obj.url) {
@@ -73,4 +76,3 @@ $.getJSON('/Json/techNoteList.json', function (data) {
         }
     });
 });
-
