@@ -3,11 +3,11 @@ $(function () {
     let index = 0;
     let isMoving = false;
 
-    moveToSection();
-    // PC: 휠 이벤트
+    
+    // PC
     $(window).on('wheel', function (w) {
         if (isMoving) return;
-
+        console.log('wheel is working')
         let deltaY = w.originalEvent.deltaY;
 
         if (deltaY > 0 && index < $sections.length - 1) {
@@ -22,7 +22,7 @@ $(function () {
         moveToSection();
     });
 
-    // 모바일: 터치 이벤트
+    // 모바일
     let touchStartY = 0;
     let touchEndY = 0;
 

@@ -37,4 +37,9 @@ li {
 }
 .testPosition .testStatic .testRelative .testAbsolute .unFixed {
   position: relative;
+}
+
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=web103.css.map */

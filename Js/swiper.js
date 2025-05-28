@@ -10,20 +10,18 @@ const checkSwiper = () => {
             },
             speed: 400,
             centeredSlides: true,
-            slidesPerView: 2,
-            spaceBetween: 30,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
             loopedSlides: 5,
 
             breakpoints: {
                 0: {
-                    slidesPerView: 1.3,
+                    slidesPerView: 3,
                     spaceBetween: 8,
                 },
                 801: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
+                    slidesPerView: 5,
+                    spaceBetween: 15,
                 }
             }
         });

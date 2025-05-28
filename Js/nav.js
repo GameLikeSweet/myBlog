@@ -3,9 +3,9 @@ function navi(menu, url) {
     this.url = url;
 }
 
-let Tec = new navi('테크노트', '/Tec/techNote.html');
-let Pro = new navi('프로필', '/Profile.html');
-let Pagi = new navi('작업 페이지', '/Page.html');
+let Tec = new navi('TechNote', '/Tec/techNote.html');
+let Pro = new navi('Profile', '/Profile.html');
+let Pagi = new navi('Work Page', '/Page.html');
 
 var menu_list = [Pro, Tec, Pagi];
 
