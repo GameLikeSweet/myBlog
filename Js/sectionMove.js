@@ -36,13 +36,10 @@ $(function () {
 
         let diff = touchStartY - touchEndY;
 
-        // 스와이프 거리 임계값(20px)
         if (diff > 20 && index < $sections.length - 1) {
-            // 아래로 스와이프 → 다음 section
             index++;
             moveToSection();
         } else if (diff < -20 && index > 0) {
-            // 위로 스와이프 → 이전 section
             index--;
             moveToSection();
         }
