@@ -104,9 +104,28 @@ header {
 
 
 footer {
-    height: 200px;
+    padding-left: 5%;
+    height: 300px;
     width: 100%;
-    background-color: lightGray;
+    background-color: darkgray;
+    ;
+    color: lightGray;
+
+    h2 {
+        margin: 15px 0;
+    }
+    ul {
+        padding: 0;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    a {
+        color: lightgray;
+        text-decoration: none;
+    }
 }
 
 @mixin aside () {
@@ -246,7 +265,7 @@ section {
     padding: 0;
     padding-top: 100px;
     box-sizing: border-box;
-    position:relative;
+    position: relative;
 
 }
 

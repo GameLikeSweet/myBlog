@@ -55,7 +55,6 @@ section:nth-child(2n) {
     position: absolute;
     top: auto;
     top: 70%;
-    background-color: white;
 
     .swiper {
         width: 100%;
@@ -71,6 +70,7 @@ section:nth-child(2n) {
         justify-content: center;
         border-radius: 25px;
         border: solid;
+        background-color: white;
     }
 
     img {
@@ -129,25 +129,78 @@ section:nth-child(2n) {
                 border: solid;
                 height: 50%;
             }
-
-            .lookFor {
-                position: absolute;
-                top: 70%;
-                left: 50%;
-                padding: 5px;
-                border-radius: 3px;
-                ;
-                box-sizing: border-box;
-                transform: translateX(-50%);
-                border: 2px solid;
-            }
-
-            .lookFor:hover {
-                background-color: #E6ECF2;
-            }
         }
     }
 }
+
+.lookFor {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    padding: 5px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    border: 2px solid;
+
+}
+
+.lookFor:hover {
+    background-color: #E6ECF2;
+}
+
+.pages {
+    .page {
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 15px;
+        width: 45%;
+        height: 75%;
+        background-color: white;
+        margin: auto;
+
+        .pageTop {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .pageImg {
+            width: 80%;
+            height: 75%;
+            margin: 15px auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .pageBox {
+            width: 80%;
+            height: 10%;
+            margin: 15px auto;
+            border: solid;
+            position: relative;
+
+            a{
+                color:black
+            }
+            div {
+                top: 30%;
+            }
+        }
+    }
+
+    .page:hover {
+        transform: scale(1.1);
+        transition-duration: 1s;
+    }
+}
+
+
+
+// -----------------------------------------mobile--------------------------------------
+
 
 
 
@@ -167,6 +220,7 @@ section:nth-child(2n) {
             width: 100%;
             box-sizing: border-box;
             padding: 0 10px;
+
             h1 {
                 font-size: 3rem;
                 font-family: 'Poppins', sans-serif;
@@ -178,8 +232,9 @@ section:nth-child(2n) {
             width: 100%;
             text-wrap: wrap;
             margin-top: 15px;
-            p{
-                width:100%;
+
+            p {
+                width: 100%;
                 box-sizing: border-box;
             }
         }
@@ -243,7 +298,7 @@ section:nth-child(2n) {
 
 
     .news {
-        padding:0;
+        padding: 0;
         padding-left: 5%;
         padding-top: 5%;
         width: 95%;
@@ -270,7 +325,7 @@ section:nth-child(2n) {
                 width: 200px;
                 height: 60%;
                 border-radius: 15px;
-                margin:0 auto;
+                margin: 0 auto;
                 padding: 5px;
                 box-sizing: border-box;
                 background-color: white;
@@ -304,4 +359,49 @@ section:nth-child(2n) {
         }
     }
 
+
+    .pages {
+        padding-bottom: 10%;
+        .page {
+            box-sizing: border-box;
+            border-radius: 15px;
+            padding: 5px;
+            width:85%;
+            height: 40%;
+            background-color: white;
+            margin: 0 auto;
+            .pageTop {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .pageImg {
+                width: 80%;
+                height: 55%;
+                margin: 5px auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .pageBox {
+                margin: 0 auto;
+                border: none;
+                position: relative;
+                height: 25%;
+
+                div {
+                    top: 30%;
+                }
+            }
+        }
+
+
+        .page:hover {
+            transform: scale(1.1);
+            transition-duration: 1s;
+        }
+    }
 }

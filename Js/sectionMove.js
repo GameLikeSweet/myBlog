@@ -2,7 +2,6 @@ $(function () {
     const $sections = $('#main > section');
     let index = 0;
     let isMoving = false;
-
     // 새로고침 시 section 위치 보정 (선택적)
     function getSectionIndexFromScroll() {
         const scrollTop = $(window).scrollTop();
@@ -29,6 +28,21 @@ $(function () {
         });
     }
 
+        function moveToBot() {
+        let headerHeight = $('header').outerHeight() || 100;
+        isMoving = true;
+
+        let footerSize = $('footer').height()
+        $('html, body').stop().animate({
+            scrollTop: $sections.eq(index -1).offset().top - headerHeight + footerSize
+        }, 600, function () {
+            setTimeout(function () {
+                isMoving = false;
+            }, 600); // 딜레이 추가
+        });
+    }
+
+
     // PC 휠 이벤트
     $(window).on('wheel', function (w) {
         if (isMoving) return;
@@ -36,6 +50,16 @@ $(function () {
 
         if (deltaY > 0 && index < $sections.length - 1) {
             index++;
+            moveToSection();
+        }
+        else if(deltaY > 0 && index >= $sections.length -1 )
+        {
+            index = $sections.length
+            moveToBot();
+        }
+        else if(deltaY < 0 && index === $sections.length)
+        {
+            index = $sections.length -1
             moveToSection();
         }
         else if (deltaY < 0 && index > 0) {
