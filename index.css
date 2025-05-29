@@ -145,6 +145,7 @@ section:nth-child(2n) {
   height: 75%;
   background-color: white;
   margin: auto;
+  transition-duration: 1s;
 }
 .pages .page .pageTop {
   width: 80%;
@@ -174,7 +175,6 @@ section:nth-child(2n) {
 }
 .pages .page:hover {
   transform: scale(1.1);
-  transition-duration: 1s;
 }
 
 @media (max-width: 800px) {
