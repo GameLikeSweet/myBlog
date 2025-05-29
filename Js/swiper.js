@@ -12,7 +12,6 @@ const checkSwiper = () => {
             centeredSlides: true,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
-            loopedSlides: 5,
 
             breakpoints: {
                 0: {
