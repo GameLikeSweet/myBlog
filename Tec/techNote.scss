@@ -163,8 +163,23 @@ article {
             transition-duration: 1s;
             transition-property: transform;
             border-radius: 15px;
-            ;
             box-shadow: 2px 2px 2px;
+        }
+
+        .inner{
+            display:flex;
+            flex-wrap: wrap;
+            padding: 5%;
+            .techImg{
+                margin: 0 auto;
+                width: 95%;
+                height: 40%;
+            }
+            .techAbout{
+                margin: 0 auto;
+                width: 95%;
+                height: 50%;
+            }
         }
 
         .web:hover,

@@ -141,6 +141,21 @@ article {
     border-radius: 15px;
     box-shadow: 2px 2px 2px;
   }
+  .techBot .inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+  }
+  .techBot .inner .techImg {
+    margin: 0 auto;
+    width: 95%;
+    height: 40%;
+  }
+  .techBot .inner .techAbout {
+    margin: 0 auto;
+    width: 95%;
+    height: 50%;
+  }
   .techBot .web:hover,
   .techBot .git:hover,
   .techBot .lib:hover {
