@@ -108,8 +108,7 @@ footer {
     height: 300px;
     width: 100%;
     background-color: darkgray;
-    ;
-    color: lightGray;
+    color: #ddd;
 
     h2 {
         margin: 15px 0;
@@ -133,86 +132,6 @@ footer {
     height: 100vh;
     box-sizing: border-box;
     background-color: #FCD6B3
-}
-
-/*사이드*/
-.profile {
-    @include aside;
-    float: left;
-    position: fixed;
-    display: flex;
-    padding-top: 100px;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    div {
-        padding: 10px;
-        text-align: center;
-
-        img {
-            width: 150px;
-            height: 150px;
-            margin: 10px 0;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-    }
-
-    ul {
-        list-style: none;
-        background-color: white;
-        width: 100%;
-
-        li {
-            margin: 2px;
-            word-break: break-all;
-            border-style: solid;
-
-            a {
-                text-decoration: none;
-                color: black
-            }
-        }
-    }
-}
-
-aside {
-    float: left;
-    position: fixed;
-    display: flex;
-    width: 200px;
-    top: 30%;
-    right: calc(50% - 750px);
-    margin-top: 100px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: E6ECF2;
-
-    ul {
-
-        li {
-            width: 100%;
-            box-sizing: border-box;
-            list-style-position: inside;
-            padding: 0 5px;
-
-            button {
-                background: none;
-                border: none;
-                text-decoration: none;
-                cursor: pointer;
-
-            }
-        }
-
-        li:first-child {
-            font-size: large;
-            text-decoration: underline;
-            list-style: none;
-            border-bottom: solid;
-            background-color: #95C5D4;
-        }
-    }
 }
 
 /*네비*/

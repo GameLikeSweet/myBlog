@@ -17,10 +17,9 @@ $(function () {
 
     // section 이동 (header 높이 보정)
     function moveToSection() {
-        let headerHeight = $('header').outerHeight() || 100;
         isMoving = true;
         $('html, body').stop().animate({
-            scrollTop: $sections.eq(index).offset().top - headerHeight
+            scrollTop: $sections.eq(index).offset().top
         }, 600, function () {
             setTimeout(function () {
                 isMoving = false;
@@ -29,12 +28,11 @@ $(function () {
     }
 
         function moveToBot() {
-        let headerHeight = $('header').outerHeight() || 100;
         isMoving = true;
 
         let footerSize = $('footer').height()
         $('html, body').stop().animate({
-            scrollTop: $sections.eq(index -1).offset().top - headerHeight + footerSize
+            scrollTop: $sections.eq(index -1).offset().top + footerSize
         }, 600, function () {
             setTimeout(function () {
                 isMoving = false;

@@ -1,15 +1,22 @@
+article {
+  width: 85%;
+  margin: 0 auto;
+}
+
 .techTop {
   width: 100%;
-  padding: 30px auto;
-  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  align-content: center;
+  margin: 0 auto;
   box-sizing: border-box;
   background-color: white;
-  display: flex;
-  align-items: center;
 }
 .techTop ul {
   align-content: center;
   display: flex;
+  margin: 0;
   width: 100%;
 }
 .techTop ul li {
@@ -30,17 +37,53 @@
 .techBot .web,
 .techBot .git,
 .techBot .lib {
-  width: auto;
   height: 300px;
   margin: 20px 30px;
-  background-color: white;
+  background-color: #E6ECF2;
   display: none;
   width: 40%;
   box-sizing: border-box;
-  transform: scale(0.9);
   transition-duration: 1s;
   transition-property: transform;
   border-radius: 15px;
+  box-shadow: 2px 2px 2px;
+}
+.techBot a {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.techBot .inner {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+  display: flex;
+}
+.techBot .inner .techImg {
+  width: 35%;
+  height: 90%;
+  border: solid;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.techBot .inner .techAbout {
+  width: 60%;
+  height: 90%;
+  color: black;
+}
+.techBot .inner .techAbout .techTitle {
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  align-content: center;
+}
+.techBot .inner .techAbout .techExplain {
+  width: 100%;
+  height: 70%;
+  box-sizing: border-box;
 }
 .techBot .web:hover,
 .techBot .git:hover,
@@ -49,4 +92,61 @@
 }
 .techBot .selected {
   display: flex;
+}
+
+@media (max-width: 800px) {
+  section {
+    height: auto;
+  }
+  article {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  article .techTop {
+    padding: 5px;
+  }
+  article .techTop ul {
+    align-content: center;
+    display: flex;
+    margin: 0;
+    width: 100%;
+  }
+  article .techTop ul li {
+    display: flex;
+    margin-right: 10px;
+    height: 70px;
+    list-style: none;
+  }
+  .techBot {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .techBot .web,
+  .techBot .git,
+  .techBot .lib {
+    width: auto;
+    height: 300px;
+    margin: 20px 30px;
+    background-color: #E6ECF2;
+    display: none;
+    width: 80%;
+    box-sizing: border-box;
+    transition-duration: 1s;
+    transition-property: transform;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px;
+  }
+  .techBot .web:hover,
+  .techBot .git:hover,
+  .techBot .lib:hover {
+    transform: scale(1.1);
+  }
+  .techBot .selected {
+    display: flex;
+  }
 }/*# sourceMappingURL=techNote.css.map */
