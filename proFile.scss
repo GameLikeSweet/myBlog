@@ -1,43 +1,129 @@
-section
-{
-    width:100%;
-    padding: 10px; margin: 10 auto;
-    display:flex;
+section {
+    width: 100%;
+    margin: 10 auto;
+    display: flex;
     flex-wrap: wrap;
-    
+
 }
-article
-{
-    width:auto;
+
+article {
+    width: 100%;
     padding: 10px;
-    margin: 30px auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
+.proFileImg {
 
-.homeL{
-    width: 400px;
-    height: 300px;
-    padding:0;
-}
+    article {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+    }
 
-.homeR{
-    background-color: lightgray;
-    ul{
-        padding:15px;
-        li{
-            margin: 3px 0;
+    .myImg {
+        background-image: url();
+        width: 20%;
+        height: 50%;
+        box-sizing: border-box;
+        border: 2px solid;
+    }
+
+    .myText {
+        width: 60%;
+        height: 50%;
+        padding: 15px;
+        box-sizing: border-box;
+
+        .myName {
+            width: 80%;
+            height: 20%;
+            border: 2px solid;
+        }
+
+        .myNameEn {
+            width: 80%;
+            height: 20%;
+            border: 2px solid;
+            margin: 1% 0;
+        }
+
+        .lineIntroduce {
+            width: 80%;
+            height: 50%;
+            border: 2px solid;
+            font-size: auto;
         }
     }
 }
 
-.New{
-    background-color:white;
+.personalInfo{
     article{
-        transition-duration: 1s;
-        height:inherit;
-    }
-    article:hover{
-        transform:scale(110%);
+        display:flex;
+        justify-content: center;
+        .infoTitle{
+            width: 10%;
+            height:70%;
+            box-sizing: border-box;
+            border: 2px solid;
+        }
+        ul{
+            padding: 0;
+            width: 70%;
+            height: 70%;
+            box-sizing: border-box;
+            border: 2px solid;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            li{
+                width: 100%;
+                list-style:none;
+                border: 2px solid;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }
 
+.skillInner{
+    display:flex;
+    justify-content: center;
+    width: 80%;
+    height: 70%;
+    .skillL{
+        width: 50%;
+        height: 100%;
+        border: 2px solid;
+        box-sizing: border-box;
+        .leftTop{
+            height:70%;
+            margin-bottom:5px;
+            box-sizing: border-box;
+            border: 2px solid;
+        }
+        .leftBot{
+            box-sizing: border-box;
+            height: 30%;
+            border: 2px solid;
+        }
+    }
+    .skillR{
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid;
+        .rightBox{
+            width: 45%;
+            height: 45%;
+            border: 2px solid;
+            margin: 2.5%;
+        }
+    }
+}

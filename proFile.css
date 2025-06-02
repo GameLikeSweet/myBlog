@@ -1,40 +1,118 @@
 section {
   width: 100%;
-  padding: 10px;
   margin: 10 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
 article {
-  width: auto;
+  width: 100%;
   padding: 10px;
-  margin: 30px auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
-.homeL {
-  width: 400px;
-  height: 300px;
-  padding: 0;
+.proFileImg article {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
 }
-
-.homeR {
-  background-color: lightgray;
+.proFileImg .myImg {
+  background-image: url();
+  width: 20%;
+  height: 50%;
+  box-sizing: border-box;
+  border: 2px solid;
 }
-.homeR ul {
+.proFileImg .myText {
+  width: 60%;
+  height: 50%;
   padding: 15px;
+  box-sizing: border-box;
 }
-.homeR ul li {
-  margin: 3px 0;
+.proFileImg .myText .myName {
+  width: 80%;
+  height: 20%;
+  border: 2px solid;
+}
+.proFileImg .myText .myNameEn {
+  width: 80%;
+  height: 20%;
+  border: 2px solid;
+  margin: 1% 0;
+}
+.proFileImg .myText .lineIntroduce {
+  width: 80%;
+  height: 50%;
+  border: 2px solid;
+  font-size: auto;
 }
 
-.New {
-  background-color: white;
+.personalInfo article {
+  display: flex;
+  justify-content: center;
 }
-.New article {
-  transition-duration: 1s;
-  height: inherit;
+.personalInfo article .infoTitle {
+  width: 10%;
+  height: 70%;
+  box-sizing: border-box;
+  border: 2px solid;
 }
-.New article:hover {
-  transform: scale(110%);
+.personalInfo article ul {
+  padding: 0;
+  width: 70%;
+  height: 70%;
+  box-sizing: border-box;
+  border: 2px solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.personalInfo article ul li {
+  width: 100%;
+  list-style: none;
+  border: 2px solid;
+}
+.personalInfo article ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.skillInner {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 70%;
+}
+.skillInner .skillL {
+  width: 50%;
+  height: 100%;
+  border: 2px solid;
+  box-sizing: border-box;
+}
+.skillInner .skillL .leftTop {
+  height: 70%;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border: 2px solid;
+}
+.skillInner .skillL .leftBot {
+  box-sizing: border-box;
+  height: 30%;
+  border: 2px solid;
+}
+.skillInner .skillR {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid;
+}
+.skillInner .skillR .rightBox {
+  width: 45%;
+  height: 45%;
+  border: 2px solid;
+  margin: 2.5%;
 }/*# sourceMappingURL=proFile.css.map */
