@@ -7,7 +7,7 @@
 
 body {
   font-family: "Verdana";
-  font-size: 16px;
+  font-size: clamp(15px, 2vw, 22px) !important;
   color: black;
   line-height: 28px;
   margin: 0 auto;

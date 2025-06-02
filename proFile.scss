@@ -39,49 +39,60 @@ article {
         .myName {
             width: 80%;
             height: 20%;
-            border: 2px solid;
+            align-content: center;
         }
 
         .myNameEn {
             width: 80%;
             height: 20%;
-            border: 2px solid;
             margin: 1% 0;
+            align-content: center;
         }
 
         .lineIntroduce {
             width: 80%;
             height: 50%;
-            border: 2px solid;
             font-size: auto;
         }
     }
 }
 
-.personalInfo{
-    article{
-        display:flex;
+.personalInfo {
+    article {
+        display: flex;
         justify-content: center;
-        .infoTitle{
+
+        .infoTitle {
             width: 10%;
-            height:70%;
+            height: 70%;
             box-sizing: border-box;
-            border: 2px solid;
+            align-content: center;
+            text-align: center;
+            margin: 5px;
+            background-color: #95C5D4;
+            border-radius: 25px;
         }
-        ul{
+
+        ul {
             padding: 0;
             width: 70%;
             height: 70%;
-            box-sizing: border-box;
-            border: 2px solid;
-            display:flex;
+
+            display: flex;
             flex-wrap: wrap;
             justify-content: end;
-            li{
+
+            li {
+                margin: 5px;
                 width: 100%;
-                list-style:none;
-                border: 2px solid;
-                a{
+                list-style: none;
+                padding: 15px;
+                box-shadow: 5px 5px 5px gray;
+                align-content: center;
+                border-radius: 25px;
+                background-color: #E6ECF2;
+
+                a {
                     color: black;
                     text-decoration: none;
                 }
@@ -90,40 +101,272 @@ article {
     }
 }
 
-.skillInner{
-    display:flex;
+.skillInner {
+    display: flex;
     justify-content: center;
-    width: 80%;
+    width: 70%;
     height: 70%;
-    .skillL{
+
+
+
+    .skill-badge {
+        img {
+            height: 48px;
+            width: auto;
+            border-radius: 8px;
+            background: #f8f8f8;
+            margin: 0 6px;
+        }
+
+    }
+
+    .skillL {
         width: 50%;
         height: 100%;
-        border: 2px solid;
         box-sizing: border-box;
-        .leftTop{
-            height:70%;
-            margin-bottom:5px;
+
+        .leftTop {
+            height: 70%;
+            margin-bottom: 5px;
+            padding: 25px;
             box-sizing: border-box;
-            border: 2px solid;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            align-content: center;
+            text-align: center;
+            background-color: #E6ECF2;
         }
-        .leftBot{
+
+        .leftBot {
             box-sizing: border-box;
             height: 30%;
-            border: 2px solid;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            align-content: center;
+            text-align: center;
+            background-color: #E6ECF2;
         }
     }
-    .skillR{
+
+    .skillR {
         width: 50%;
         height: 100%;
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
-        border: 2px solid;
-        .rightBox{
+
+        .rightBox {
             width: 45%;
             height: 45%;
-            border: 2px solid;
             margin: 2.5%;
+            padding: 25px;
+            border-radius: 25px;
+            align-content: center;
+            text-align: center;
+            box-shadow: 5px 5px 5px gray;
+            background-color: #E6ECF2;
+        }
+    }
+}
+
+
+.aboutMeInner {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+
+    .tendency,
+    .strength {
+        width: 45%;
+        height: 50%;
+        padding: 50px;
+        border-radius: 25px;
+
+        ul {
+            margin-top: 10%;
+            background-color: white;
+            border-radius: 25px;
+            height: 50%;
+            align-content: center;
+        }
+
+    }
+
+    .tendency {
+        background-color: #E8F3FF;
+    }
+
+    .strength {
+        background-color: #F6FAFE;
+    }
+}
+
+@media (max-width:800px) {
+
+
+    * {
+        word-wrap: break-word;
+    }
+
+    .proFileImg {
+
+        article {
+            display: flex;
+            justify-content: center;
+            padding-top: 5%;
+        }
+
+        .myImg {
+            background-image: url();
+            width: 80%;
+            height: 40%;
+            box-sizing: border-box;
+            border: 2px solid;
+        }
+
+        .myText {
+            width: 90%;
+            height: 50%;
+            padding: 15px;
+            box-sizing: border-box;
+
+        }
+    }
+
+    .personalInfo {
+        article {
+
+            .infoTitle {
+                writing-mode: vertical-rl;
+            }
+
+            ul {
+                padding: 0;
+                width: 70%;
+                height: 70%;
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: end;
+
+                li {
+                    border: 2px solid;
+                    margin: 5px;
+                    width: 95%;
+                    list-style: none;
+                    padding: 5px;
+                    box-shadow: 5px 5px 5px gray;
+                    align-content: center;
+                    font-size: 1em;
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .skillInner {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: 70%;
+        flex-wrap: wrap;
+
+
+        .skill-badge {
+            img {
+                height: 48px;
+                width: auto;
+                border-radius: 8px;
+                background: #f8f8f8;
+                margin: 0 6px;
+            }
+
+        }
+
+        .skillL {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+
+            .leftTop {
+                height: 70%;
+                margin-bottom: 5px;
+                padding: 15px;
+                box-sizing: border-box;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+                align-content: center;
+                text-align: center;
+                background-color: #E6ECF2;
+            }
+
+            .leftBot {
+                box-sizing: border-box;
+                height: 30%;
+                border-bottom-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+                align-content: center;
+                text-align: center;
+                background-color: #E6ECF2;
+            }
+        }
+
+        .skillR {
+            width: 100%;
+            margin-top: 15px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+
+            .rightBox {
+                margin: 2.5% auto;
+                width: 100%;
+                height: 20%;
+                margin: 2.5%;
+                padding: 15px;
+            }
+        }
+    }
+
+
+    .aboutMe{
+        align-content: start;
+    }
+    .aboutMeInner {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .tendency,
+        .strength {
+            width: 85%;
+            height: fit-content;
+            padding: 15px;
+            border-radius: 25px;
+
+            ul {
+                margin-top: 10%;
+                background-color: white;
+                border-radius: 25px;
+                height: 50%;
+                align-content: center;
+            }
+
+        }
+
+        .tendency {
+            background-color: #E8F3FF;
+        }
+
+        .strength {
+            background-color: #F6FAFE;
         }
     }
 }

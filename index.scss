@@ -302,11 +302,11 @@ section:nth-child(2n) {
     .news {
         padding: 0;
         padding-left: 5%;
-        padding-top: 5%;
+        margin: 0;
         width: 95%;
         position: relative;
-        margin-top: 10px;
-        left: 5%;
+        margin-top: auto;
+        margin-bottom: 20%;
         height: 550px;
         background-color: #E6ECF2;
         border-top-left-radius: 20px;
@@ -363,14 +363,13 @@ section:nth-child(2n) {
 
 
     .pages {
-        padding-bottom: 10%;
-
+        padding-top: 100px;
         .page {
             box-sizing: border-box;
             border-radius: 15px;
             padding: 5px;
             width: 85%;
-            height: 40%;
+            height: 50%;
             background-color: white;
             margin: 0 auto;
 
