@@ -124,7 +124,7 @@ article {
 .aboutMeInner .tendency,
 .aboutMeInner .strength {
   width: 45%;
-  height: 50%;
+  height: 60%;
   padding: 50px;
   border-radius: 25px;
 }
@@ -133,7 +133,7 @@ article {
   margin-top: 10%;
   background-color: white;
   border-radius: 25px;
-  height: 50%;
+  height: auto;
   align-content: center;
 }
 .aboutMeInner .tendency {
