@@ -2,7 +2,7 @@ $(function () {
     const $sections = $('#main > section');
     let index = 0;
     let isMoving = false;
-    // 새로고침 시 section 위치 보정 (선택적)
+    // 새로고침 시 section 위치 보정 
     function getSectionIndexFromScroll() {
         const scrollTop = $(window).scrollTop();
         let idx = 0;
@@ -15,7 +15,6 @@ $(function () {
     }
     index = getSectionIndexFromScroll();
 
-    // section 이동 (header 높이 보정)
     function moveToSection() {
         isMoving = true;
         $('html, body').stop().animate({
@@ -23,20 +22,20 @@ $(function () {
         }, 600, function () {
             setTimeout(function () {
                 isMoving = false;
-            }, 600); // 딜레이 추가
+            }, 600); 
         });
     }
 
-        function moveToBot() {
+    function moveToBot() {
         isMoving = true;
 
         let footerSize = $('footer').height()
         $('html, body').stop().animate({
-            scrollTop: $sections.eq(index -1).offset().top + footerSize
+            scrollTop: $sections.eq(index - 1).offset().top + footerSize
         }, 600, function () {
             setTimeout(function () {
                 isMoving = false;
-            }, 600); // 딜레이 추가
+            }, 600); 
         });
     }
 
@@ -50,14 +49,12 @@ $(function () {
             index++;
             moveToSection();
         }
-        else if(deltaY > 0 && index >= $sections.length -1 )
-        {
+        else if (deltaY > 0 && index >= $sections.length - 1) {
             index = $sections.length
             moveToBot();
         }
-        else if(deltaY < 0 && index === $sections.length)
-        {
-            index = $sections.length -1
+        else if (deltaY < 0 && index === $sections.length) {
+            index = $sections.length - 1
             moveToSection();
         }
         else if (deltaY < 0 && index > 0) {
@@ -66,7 +63,6 @@ $(function () {
         }
     });
 
-    // 모바일 터치 (원하는 경우만 사용)
     let touchStartY = 0;
     let touchEndY = 0;
 
@@ -82,7 +78,17 @@ $(function () {
         if (diff > 20 && index < $sections.length - 1) {
             index++;
             moveToSection();
-        } else if (diff < -20 && index > 0) {
+
+        }
+        else if (diff > 0 && index >= $sections.length - 1) {
+            index = $sections.length
+            moveToBot();
+        }
+        else if (diff < 0 && index === $sections.length) {
+            index = $sections.length - 1
+            moveToSection();
+        }
+        else if (diff < -20 && index > 0) {
             index--;
             moveToSection();
         }
