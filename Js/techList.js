@@ -47,6 +47,7 @@ function addTechNote() {
 
             let $techImg = $('<div>').addClass('techImg');
             if (obj.img) $techImg.css('background-image', 'url(' + obj.img + ')');
+            else $techImg.css('background-image', `url("/resource/noImg.png")`);
 
             let $techAbout = $('<div>').addClass('techAbout');
             let $title = $('<div>').addClass('techTitle').text(obj.title);

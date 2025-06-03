@@ -121,6 +121,12 @@ section:nth-child(2n) {
   border: solid;
   height: 50%;
 }
+.news .newsBottom .letter .thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .lookFor {
   position: absolute;

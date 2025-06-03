@@ -128,6 +128,12 @@ section:nth-child(2n) {
                 background-color: white;
                 border: solid;
                 height: 50%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
         }
     }
@@ -340,6 +346,7 @@ section:nth-child(2n) {
                     background-color: white;
                     border: solid;
                     height: 40%;
+
                 }
 
                 .lookFor {
@@ -364,6 +371,7 @@ section:nth-child(2n) {
 
     .pages {
         padding-top: 100px;
+
         .page {
             box-sizing: border-box;
             border-radius: 15px;

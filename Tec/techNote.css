@@ -68,6 +68,9 @@ article {
   border: solid;
   margin-right: 10px;
   box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .techBot .inner .techAbout {
   width: 60%;

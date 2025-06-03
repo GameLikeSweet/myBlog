@@ -19,7 +19,9 @@ article {
   padding-top: 5%;
 }
 .proFileImg .myImg {
-  background-image: url();
+  background-image: url("/resource/noImg.png");
+  background-position: center;
+  background-repeat: no-repeat;
   width: 20%;
   height: 50%;
   box-sizing: border-box;
