@@ -1,6 +1,5 @@
 {
-    "techTotal" : "5",
-
+    "techTotal": "5",
     "web": {
         "0": {
             "title": "Web Home",
@@ -32,16 +31,24 @@
     "lib": {},
     "page": {
         "p1": {
-            "title": "web101/index.html",
-            "url": "/Page/web101/index.html"
+            "title": "web101",
+            "url": "https://stellular-valkyrie-c3038b.netlify.app/"
         },
         "p2": {
-            "title": "web102/index.html",
-            "url": "/Page/web102/index.html"
+            "title": "web102",
+            "url": "https://dapper-elf-8c6e9a.netlify.app/"
         },
         "p3": {
-            "title": "web103/index.html",
-            "url": "/Page/web103/index.html"
+            "title": "web103",
+            "url": "https://verdant-sprite-527de9.netlify.app/"
+        },
+        "p4": {
+            "title": "web104",
+            "url": "https://lustrous-douhua-752b46.netlify.app/"
+        },
+        "p5": {
+            "title": "web105",
+            "url": "https://zingy-belekoy-ce63e8.netlify.app/"
         }
     }
 }
