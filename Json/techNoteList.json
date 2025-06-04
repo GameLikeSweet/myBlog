@@ -1,34 +1,65 @@
 {
-    "techTotal": "5",
+    "techTotal": "7",
     "web": {
         "0": {
             "title": "Web Home",
-            "url": "/Tec/Web/webHome.html"
+            "url": "/Tec/Web/webHome.html",
+            "img" : "/resource/webPageImg.png"
         },
         "2": {
             "title": "web 101",
-            "url": "/Tec/Web/web101/web101.html"
+            "url": "/Tec/Web/web101/web101.html",
+            "img" : "/resource/webPageImg.png"
         },
         "3": {
             "title": "web 102",
-            "url": "/Tec/Web/web102/web102.html"
+            "url": "/Tec/Web/web102/web102.html",
+            "img" : "/resource/webPageImg.png"
         },
         "5": {
             "title": "web 103",
-            "url": "/Tec/Web/web103/web103.html"
+            "url": "/Tec/Web/web103/web103.html",
+            "img" : "/resource/webPageImg.png"
         }
     },
     "git": {
         "1": {
             "title": "Git Home",
-            "url": "/Tec/Git/gitStart.html"
+            "url": "/Tec/Git/gitStart.html",
+            "img" : "/resource/gitLogo.png"
         },
         "4": {
             "title": "GitHub",
-            "url": "/Tec/Git/gitHub.html"
+            "url": "/Tec/Git/gitHub.html",
+            "img" : "/resource/homeSlide1.png"
         }
     },
-    "lib": {},
+    "lib": {
+        "6": {
+            "title": "Swiper",
+            "url": "/Tec/Lib/swiper.html",
+            "img": "https://swiperjs.com/images/swiper-logo.svg"
+        },
+        "7": {
+            "title": "Animate On Scroll",
+            "url": "/Tec/Lib/AOS.html",
+            "img": "/resource/aosLogo.png",
+            "explain" : "AOS는 웹페이지 스크롤 시 특정 엘리먼트에 애니메이션을 적용할 수 있습니다.투명도 변경, 위치 이동, 크기 변경 등 다양한 애니메이션 효과가 적용될 수 있습니다. "
+        },
+        "8": {
+            "title": "Gsap",
+            "url": "/Tec/Lib/gsap.html",
+            "img": "/resource/gsapLogo.png",
+            "explain" : "GSAP를 사용하면 JS로 관리할 수 있는 모든 것을 쉽게 애니메이션화할 수 있습니다. 부드러운 성능과 타의 추종을 불허하는 지원을 제공하여 재미있는 것에 집중할 수 있습니다."
+        },
+        "9": {
+            "title": "jQuery",
+            "url": "/Tec/Lib/jQuery/jQuery.html",
+            "img": "/resource/jqueryLogo.png",
+            "explain" : "jQuery는 빠르고 작지만 풍부한 기능을 갖춘 JavaScript 라이브러리입니다. 다양한 브라우저에서 작동하는 사용하기 쉬운 API를 통해 HTML 문서 탐색 및 조작, 이벤트 처리, 애니메이션, Ajax 등을 훨씬 간편하게 구현할 수 있습니다."
+            
+        }
+    },
     "page": {
         "p1": {
             "title": "web101",

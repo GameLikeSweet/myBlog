@@ -33,7 +33,7 @@ function addTechNote() {
 
         // 한 번에 오름차순 정렬
         allList.sort(function(a, b) {
-            return a.idx - b.idx;
+            return b.idx - a.idx;
         });
 
         // 순서대로 DOM 추가
