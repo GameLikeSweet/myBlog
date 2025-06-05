@@ -1,20 +1,23 @@
 {
-    "techTotal": "7",
+    "techTotal": "10",
     "web": {
         "0": {
             "title": "Web Home",
             "url": "/Tec/Web/webHome.html",
-            "img" : "/resource/webPageImg.png"
+            "img" : "/resource/webPageImg.png",
+            "explain" : "Web 개발과 HTML, CSS, JS에 대한 간단한 설명 "
         },
         "2": {
             "title": "web 101",
             "url": "/Tec/Web/web101/web101.html",
-            "img" : "/resource/webPageImg.png"
+            "img" : "/resource/webPageImg.png",
+            "explain" : "웹 개발 입문용 기본적인 HTML 엘리먼트들만을 이용해서 간단한 자기소개 만들어보기"
         },
         "3": {
             "title": "web 102",
             "url": "/Tec/Web/web102/web102.html",
-            "img" : "/resource/webPageImg.png"
+            "img" : "/resource/webPageImg.png",
+            "explain" : "선택자와 스타일을 통해서 각 엘리먼트를 디자인 하는 방법을 학습하기"
         },
         "5": {
             "title": "web 103",
@@ -26,7 +29,8 @@
         "1": {
             "title": "Git Home",
             "url": "/Tec/Git/gitStart.html",
-            "img" : "/resource/gitLogo.png"
+            "img" : "/resource/gitLogo.png",
+            "explain" : "git을 시작하기 위한 기본적인 정보와 설치 후 최초 설정하기"
         },
         "4": {
             "title": "GitHub",
@@ -38,7 +42,8 @@
         "6": {
             "title": "Swiper",
             "url": "/Tec/Lib/swiper.html",
-            "img": "https://swiperjs.com/images/swiper-logo.svg"
+            "img": "https://swiperjs.com/images/swiper-logo.svg",
+            "explain" : "Swiper는 웹에서 가장 인기 있는 모바일 친화적 슬라이더 라이브러리입니다. 성능, 유연성, 그리고 네이티브와 유사한 터치 상호작용에 중점을 두고 개발되었으며, 웹사이트, 앱, 디지털 제품 전반에 걸쳐 수백만 개의 슬라이더를 지원합니다."
         },
         "7": {
             "title": "Animate On Scroll",
@@ -57,7 +62,6 @@
             "url": "/Tec/Lib/jQuery/jQuery.html",
             "img": "/resource/jqueryLogo.png",
             "explain" : "jQuery는 빠르고 작지만 풍부한 기능을 갖춘 JavaScript 라이브러리입니다. 다양한 브라우저에서 작동하는 사용하기 쉬운 API를 통해 HTML 문서 탐색 및 조작, 이벤트 처리, 애니메이션, Ajax 등을 훨씬 간편하게 구현할 수 있습니다."
-            
         }
     },
     "page": {
