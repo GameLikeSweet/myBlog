@@ -53,7 +53,7 @@
         },
         "8": {
             "title": "Gsap",
-            "url": "/Tec/Lib/gsap.html",
+            "url": "/Tec/Lib/gsap/gsap.html",
             "img": "/resource/gsapLogo.png",
             "explain" : "GSAP를 사용하면 JS로 관리할 수 있는 모든 것을 쉽게 애니메이션화할 수 있습니다. 부드러운 성능과 타의 추종을 불허하는 지원을 제공하여 재미있는 것에 집중할 수 있습니다."
         },

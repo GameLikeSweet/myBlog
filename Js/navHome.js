@@ -35,8 +35,9 @@ for (let i = 0; i < menu_list.length; i++) {
         {
             y: -100,
             opacity: 0,
-            duration: 0.5
-        }
+            duration: 1,
+        },
+        i * 0.25
     )
 }
 
