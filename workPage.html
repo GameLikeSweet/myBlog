@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TechNote</title>
+    <title>WorkPage</title>
     <link rel="icon" type="image/svg+xml" href="/resource/favicon.svg">
     <link rel="stylesheet" type="text/css" href="/default.css">
-    <link rel="stylesheet" type="text/css" href="/Tec/Lib/jQuery/jQuery.css">
+    <link rel="stylesheet" type="text/css" href="/workPage.css">
     <link rel="stylesheet" type="text/css" href="/mobile.css">
 
     <!--외부 라이브러리 CDN-->
@@ -15,9 +15,6 @@
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-
-    <!--gsap-->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
     <!--Swiper-->
@@ -88,49 +85,12 @@
     </div>
 
     <div id="main">
-        <section class='intro'>
-            <article class="whatIs">
-                <div class="logo"><img src='/resource/jqueryLogo.png'></div>
-                <div class="jquery">
-                    <div class="whatIsTop">
-                        <h1>jQuery</h1>
-                    </div>
-                    <div class="WhatIsBot">
-                        <p>jQuery는 빠르고 작지만 풍부한 기능을 갖춘 JavaScript 라이브러리입니다. 다양한 브라우저에서 작동하는 사용하기 쉬운 API를 통해 HTML 문서 탐색 및
-                            조작, 이벤트 처리, 애니메이션, Ajax 등을 훨씬 간편하게 구현할 수 있습니다.</p>
-                    </div>
+        <section>
+            <article>
+                <div class="pageTop">
+                    <h1>작업 페이지 리스트</h1>
                 </div>
-
-                <div class="getCDN">
-                    <div class="CDNTitle">
-                        <h2>CDN을 통해 jQuery 적용하기</h2>
-                    </div>
-                    <div><img src="/resource/jQuery/jQueryApply.png"></div>
-                </div>
-                <div class="">
-                    <h2>jquery의 특징</h2>
-                    <p>jQuery를 잘 활용하려면 JavaScript, HTML, CSS 및 일반적인 프로그래밍에 대한 개념이나 경험이 필요할 수 있다.
-                        jQuery의 중요한 점중 하나는 jQuery는 JavaScript의 라이브러리중 하나라는 것이다. jQuery의 모든 기능은 JavaScript를 통해
-                        활용되므로 JavaScript에 대한 이해도나 기본적인 프로그래밍에 대한 기술과 구조화 능력이 없이는 활용에 큰 어려움이 있을 수 있다.
-                    </p>
-                </div>
-            </article>
-        </section>
-
-        <section class="compare">
-            <article class="compareSeleter">
-                <h2>JS와 jQuery 비교하기</h2>
-                <div class="codeImg"><img src='/resource/jQuery/compareImg.png'></div>
-                <div class="strangeth">
-                    <p>
-                        jQuery는 JS보다 더 간결하고 직관적인 문법을 사용한다.<br>
-                        선택자를 비교하면js는
-                        <span class="code">document.querySelectorAll()</span> jquery는 <span class="code">$()</span>로 훨신
-                        간결한걸 볼 수 있다.
-                    </p>
-                    <p>
-                        DOM 내부의 특정 엘리먼트를 선택하여 조작하거나 작업하는게 우수하다.
-                    </p>
+                <div class="pageBot">
                 </div>
             </article>
         </section>
@@ -141,8 +101,7 @@
             <ul>
                 <li>tel : 010-6336-9978</li>
                 <li>E-Mail : tjdgns9978@gmail.com</li>
-                <li><a href='https://github.com/GameLikeSweet' target="_blank">Github :
-                        https://github.com/GameLikeSweet</a></li>
+                <li><a href='https://github.com/GameLikeSweet' target="_blank">Github : https://github.com/GameLikeSweet</a></li>
                 <li><a href='http://shmyblog.com/' target="_blank">site : http://shmyblog.com/</a></li>
             </ul>
         </div>
@@ -151,6 +110,7 @@
     <script src="/Js/techList.js"></script>
     <script>
         AOS.init();
+        addPageList()
     </script>
 </body>
 

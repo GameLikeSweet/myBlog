@@ -5,7 +5,7 @@ function navi(menu, url) {
 
 let Tec = new navi('TechNote', '/Tec/techNote.html');
 let Pro = new navi('Profile', '/Profile.html');
-let Pagi = new navi('Work Page', '/Page.html');
+let Pagi = new navi('Work Page', '/workPage.html');
 
 var menu_list = [Pro, Tec, Pagi];
 

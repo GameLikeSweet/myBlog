@@ -1,0 +1,189 @@
+section {
+    min-height: 100vh;
+    height: auto;
+    background-color: #E6ECF2;
+}
+
+article {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.pageTop {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    align-content: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: white;
+
+    ul {
+        align-content: center;
+        display: flex;
+        margin: 0;
+        width: 100%;
+
+        li {
+            display: flex;
+            margin-right: 50px;
+            height: 70px;
+            list-style: none;
+        }
+    }
+}
+
+
+
+
+.pageBot {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+
+    .pageBox {
+        min-width: 1100px;
+        width: 45%;
+        min-height: 350px;
+        height: 30%;
+        margin: 20px 30px;
+        background-color: white;
+        box-sizing: border-box;
+        transition-duration: 1s;
+        transition-property: transform;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px;
+        margin: 50px auto;
+
+    }
+
+    a {
+        width: 100%;
+        min-height: 350px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+
+    }
+
+    .inner {
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+        box-sizing: border-box;
+        display: flex;
+
+        .pageImg {
+            min-width: 300px;
+            min-height: 250px;
+            width: 40%;
+            height: 85%;
+            margin-right: 10px;
+            box-sizing: border-box;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .pageAbout {
+            width: 60%;
+            height: 90%;
+            color: black;
+
+            .pageTitle {
+                width: 100%;
+                height: 30%;
+                box-sizing: border-box;
+                align-content: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            }
+
+            .pageExplain {
+                margin-top: 5%;
+                width: 100%;
+                height: 70%;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .pageBox:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 800px) {
+
+    section {
+        height: auto;
+    }
+
+    article {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+
+        .pageTop {
+            padding: 5px;
+
+            ul {
+                align-content: center;
+                display: flex;
+                margin: 0;
+                width: 100%;
+
+                li {
+                    display: flex;
+                    margin-right: 10px;
+                    height: 70px;
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    .pageBot {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+
+        .inner {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5%;
+
+            .pageImg {
+                margin: 0 auto;
+                width: 95%;
+                height: 40%;
+            }
+
+            .pageAbout {
+                margin: 0 auto;
+                width: 95%;
+                height: 50%;
+            }
+        }
+
+        .web:hover,
+        .git:hover,
+        .lib:hover {
+            transform: scale(1.1);
+        }
+
+        .selected {
+            display: flex;
+        }
+    }
+}

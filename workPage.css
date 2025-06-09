@@ -1,0 +1,160 @@
+section {
+  min-height: 100vh;
+  height: auto;
+  background-color: #E6ECF2;
+}
+
+article {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pageTop {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  align-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: white;
+}
+.pageTop ul {
+  align-content: center;
+  display: flex;
+  margin: 0;
+  width: 100%;
+}
+.pageTop ul li {
+  display: flex;
+  margin-right: 50px;
+  height: 70px;
+  list-style: none;
+}
+
+.pageBot {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.pageBot .pageBox {
+  min-width: 1100px;
+  width: 45%;
+  min-height: 350px;
+  height: 30%;
+  margin: 20px 30px;
+  background-color: white;
+  box-sizing: border-box;
+  transition-duration: 1s;
+  transition-property: transform;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px;
+  margin: 50px auto;
+}
+.pageBot a {
+  width: 100%;
+  min-height: 350px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.pageBot .inner {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+  display: flex;
+}
+.pageBot .inner .pageImg {
+  min-width: 300px;
+  min-height: 250px;
+  width: 40%;
+  height: 85%;
+  margin-right: 10px;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pageBot .inner .pageAbout {
+  width: 60%;
+  height: 90%;
+  color: black;
+}
+.pageBot .inner .pageAbout .pageTitle {
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  align-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.pageBot .inner .pageAbout .pageExplain {
+  margin-top: 5%;
+  width: 100%;
+  height: 70%;
+  box-sizing: border-box;
+}
+.pageBot .pageBox:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  section {
+    height: auto;
+  }
+  article {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  article .pageTop {
+    padding: 5px;
+  }
+  article .pageTop ul {
+    align-content: center;
+    display: flex;
+    margin: 0;
+    width: 100%;
+  }
+  article .pageTop ul li {
+    display: flex;
+    margin-right: 10px;
+    height: 70px;
+    list-style: none;
+  }
+  .pageBot {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .pageBot .inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+  }
+  .pageBot .inner .pageImg {
+    margin: 0 auto;
+    width: 95%;
+    height: 40%;
+  }
+  .pageBot .inner .pageAbout {
+    margin: 0 auto;
+    width: 95%;
+    height: 50%;
+  }
+  .pageBot .web:hover,
+  .pageBot .git:hover,
+  .pageBot .lib:hover {
+    transform: scale(1.1);
+  }
+  .pageBot .selected {
+    display: flex;
+  }
+}/*# sourceMappingURL=workPage.css.map */

@@ -3,14 +3,10 @@ function navi(menu, url) {
     this.url = url;
 }
 
-let Web = new navi('Web', '/Web.html');
-let Alg = new navi('알고리즘', '/Algorithm.html');
-let Uni = new navi('Unity', '/Unity.html');
-let Git = new navi("Git", '/Git.html');
-let Lib = new navi("라이브러리", '/Library.html');
+
 let Tec = new navi('TechNote', '/Tec/techNote.html');
 let Pro = new navi('Profile', '/Profile.html');
-let Pagi = new navi('Work Page', '/Page.html');
+let Pagi = new navi('Work Page', '/workPage.html');
 
 var menu_list = [Pro, Tec,  Pagi];
 
