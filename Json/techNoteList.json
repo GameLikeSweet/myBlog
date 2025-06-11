@@ -47,7 +47,7 @@
         },
         "7": {
             "title": "Animate On Scroll",
-            "url": "/Tec/Lib/AOS.html",
+            "url": "/Tec/Lib/AOS/aos.html",
             "img": "/resource/aosLogo.png",
             "explain" : "AOS는 웹페이지 스크롤 시 특정 엘리먼트에 애니메이션을 적용할 수 있습니다.투명도 변경, 위치 이동, 크기 변경 등 다양한 애니메이션 효과가 적용될 수 있습니다. "
         },
