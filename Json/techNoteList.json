@@ -22,7 +22,8 @@
         "5": {
             "title": "web 103",
             "url": "/Tec/Web/web103/web103.html",
-            "img" : "/resource/webPageImg.png"
+            "img" : "/resource/webPageImg.png",
+            "explain" : "Link를 이용한 css관리, Position을 이용한 엘리먼트 배치를 학습하기"
         }
     },
     "git": {
@@ -41,7 +42,7 @@
     "lib": {
         "6": {
             "title": "Swiper",
-            "url": "/Tec/Lib/swiper.html",
+            "url": "/Tec/Lib/Swiper/swiper.html",
             "img": "https://swiperjs.com/images/swiper-logo.svg",
             "explain" : "Swiper는 웹에서 가장 인기 있는 모바일 친화적 슬라이더 라이브러리입니다. 성능, 유연성, 그리고 네이티브와 유사한 터치 상호작용에 중점을 두고 개발되었으며, 웹사이트, 앱, 디지털 제품 전반에 걸쳐 수백만 개의 슬라이더를 지원합니다."
         },
