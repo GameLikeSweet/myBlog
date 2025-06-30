@@ -1,0 +1,39 @@
+
+.swiper {
+    width: 50vw;
+    height: 250px;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: black !important;
+}
+
+.swiper-slide {
+
+    .slideInner {
+        margin: 10px;
+        color: black;
+        text-decoration: none;
+
+        .sliderImg {
+            margin: 10px auto;
+            width: 300px;
+            height: 150px;
+            box-sizing: border-box;
+            background-image: url('/resource/Alg/boj-og.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .bjnum {
+
+            text-align: end;
+        }
+    }
+}
+
+.swiper-button-prev {
+    left: 0;
+}
