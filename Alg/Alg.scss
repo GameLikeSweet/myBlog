@@ -2,6 +2,11 @@
 .swiper {
     width: 50vw;
     height: 250px;
+    background-color: #E6ECF2;
+}
+ 
+article {
+    background-color: #E6ECF2;
 }
 
 a {
@@ -16,6 +21,7 @@ a {
         margin: 10px;
         color: black;
         text-decoration: none;
+        background-color: white;
 
         .sliderImg {
             margin: 10px auto;

@@ -4,6 +4,7 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 10,
   effect: 'coverflow',
   centeredSlides:true,
+  initialSlide: 1,
   coverflowEffect: {
     rotate: 20,
     stretch: 0,
